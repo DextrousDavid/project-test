@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /*
 ** TailwindCSS Configuration File
 **

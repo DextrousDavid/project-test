@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div class="container">
     <div>
@@ -9,8 +10,8 @@
           target="_blank"
           rel="noopener noreferrer"
           class="button--green"
-          >Documentation</a
-        >``
+          >Documentations</a
+        >
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
@@ -27,7 +28,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;

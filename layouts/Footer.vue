@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-wrap px-12 justify-center bg-gray-200 p-6 footer">
-    <div class="flex flex-wrap mb-3 w-full border-b-2">
-      <div class="xs:w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-4">
+    <div class="flex flex-wrap mb-3 text-center w-full border-b-2">
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
         <h6 class="font-extrabold py-2">Products</h6>
         <ul>
           <li><a href="#">Optima</a></li>
@@ -10,7 +12,9 @@
         </ul>
       </div>
 
-      <div class="xs:w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-4">
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
         <h6 class="font-extrabold py-2">Prices</h6>
         <ul>
           <li><a href="#">Optima</a></li>
@@ -19,7 +23,9 @@
         </ul>
       </div>
 
-      <div class="xs:w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-4">
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
         <h6 class="font-extrabold py-2">Partners</h6>
         <ul>
           <li><a href="#">Find a Partner</a></li>
@@ -28,7 +34,9 @@
         </ul>
       </div>
 
-      <div class="xs:w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-4">
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
         <h6 class="font-extrabold py-2">Resources</h6>
         <ul>
           <li><a href="#">User Guides</a></li>
@@ -40,7 +48,9 @@
         </ul>
       </div>
 
-      <div class="xs:w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-4">
+      <div
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
+      >
         <h6 class="font-extrabold py-2">Support</h6>
         <ul>
           <li><a href="#">Support@cloudenly.com</a></li>
@@ -50,7 +60,7 @@
       </div>
 
       <div
-        class="xs:w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-4 -mt-4"
+        class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
       >
         <h6 class="font-extrabold py-2">Products</h6>
         <ul>
@@ -61,18 +71,18 @@
 
       <!-- border goes in here -->
 
-      <!-- <div class="w-full xs:w-1/4 sm:1/2 md:w-1/4 lg:w-1/5">
+      <!-- <div class="w-full xs:w-1/4 sm:1/2 sm:text-centermd:text-left  md:w-1/4 lg:w-1/5">
         <h6 class="py-4">Subscribe</h6>
         <form action="#">
           <div class="flex items-center mb-6">
             <input
               id="inline-full-name"
-              class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
               type="text"
               placeholder="Email"
             />
             <button
-              class="bg-purple-500 ml-2 hover:bg-purple-600 text-white font-bold font-extrabold py-2 px-4"
+              class="bg-purple-500 ml-2 hover:bg-purple-600 text-white font-bold font-extrabold py-2 px-2"
               type="submit"
             >
               Submit
@@ -84,25 +94,25 @@
     </div>
     <!-- Newsletter Button and copyight -->
     <div class="flex flex-wrap mb-3 w-full">
-      <div class="w-full mb-6 px-4">
-        <i class="fa fa-lg fa-whatsapp mr-2" aria-hidden="true"></i>
-        <i class="fa fa-lg fa-twitter mr-2" aria-hidden="true"></i>
-        <i class="fa fa-lg fa-facebook mr-2"></i>
+      <div class="w-full mb-6 px-2">
+        <i class="fa fa-lg fa-whatsapp mr-2" aria-hidden="true" />
+        <i class="fa fa-lg fa-twitter mr-2" aria-hidden="true" />
+        <i class="fa fa-lg fa-facebook mr-2" />
         <button>
-          <i class="fa fa-lg fa-instagram mr-2" aria-hidden="true"></i>
+          <i class="fa fa-lg fa-instagram mr-2" aria-hidden="true" />
         </button>
       </div>
     </div>
 
-    <div class="flex flex-wrap mb-3 w-full -mt-3">
-      <div class="w-full md:w-3/4 lg:w-3/4 mb-3">
+    <div class="flex flex-wrap mb-3 w-full -mt-3 px-2">
+      <div class="w-full md:w-2/4 lg:w-3/4 mb-3 text-left">
         <p>
-          &copy; Copyright 2020 Scelloo.com. All rights reserved. Scelloo HQ,
+          &copy; Copyright 2020 Scelloo.com., All rights reserved. Scelloo HQ,
           Plot 16 New Creation Street, Lekki, Lagos, Nigeria<br />Terms of
           Service. Privacy Information. Security. Careers. Contact.
         </p>
       </div>
-      <div class="w-full md:w-1/4 lg:w-1/4 mb-3">
+      <div class="w-full md:w-2/4 lg:w-1/4 mb-3 text-left">
         <div class="mb-1">
           <h5 class="font-bold">Subscribe to our Newsletter</h5>
           <p>Subscibe to our Newsletter. We don't Bite!</p>
@@ -111,12 +121,12 @@
           <div class="flex items-center mb-6">
             <input
               id="inline-full-name"
-              class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-4 text-gray-700 leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
+              class="bg-gray-200 appearance-none border-2 border-gray-200 w-full font-extrabold py-2 px-2 text-gray-700 leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
               type="email"
               placeholder="Enter Email"
             />
             <button
-              class="bg-blue-500 ml-2 hover:bg-white hover:text-blue-500 text-white font-bold font-extrabold py-2 px-4 shadow-lg duration-200 border rounded"
+              class="bg-blue-500 ml-2 hover:bg-white hover:text-blue-500 text-white font-bold font-extrabold py-2 px-2 shadow-lg duration-200 border rounded"
               type="submit"
             >
               Submit
@@ -170,6 +180,7 @@ li {
 a:hover {
   color: #ddd;
 }
+
 @media (max-width: 642px) {
   .bottom {
     text-align: center;

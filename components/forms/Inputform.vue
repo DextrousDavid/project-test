@@ -2,7 +2,7 @@
   <form class="example" style="margin-top: 30px">
     <div class="mb-10" style="max-width: 550px; margin: auto">
       <button type="submit">
-        <i class="fa fa-search"></i>
+        <i class="fa fa-search" />
       </button>
       <input type="text" placeholder="Describe your issue" name="search" />
     </div>

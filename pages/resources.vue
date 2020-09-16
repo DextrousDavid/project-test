@@ -1,11 +1,12 @@
 <template>
   <div>
+    <Header />
     <Banner />
     <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap -mx-2">
         <!-- Row One Starts here! -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
-          <a href="/resources">
+          <nuxt-link to="/userguide">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">User Guide</h1>
@@ -16,11 +17,11 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
         <!-- Row Two Ends Here -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">White Paper</h1>
@@ -31,11 +32,11 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Blog</h1>
@@ -46,11 +47,11 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Community</h1>
@@ -61,14 +62,14 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
-                <h1 class="font-bold">FaQ</h1>
+                <h1 class="font-bold">FAQ</h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
                     Start a discussion, browse solutions, and get tips from us
@@ -76,11 +77,11 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 style="margin-bottom: -24px" class="font-bold">
@@ -93,11 +94,11 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Events</h1>
@@ -108,11 +109,11 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <a href="/resources">
+          <nuxt-link to="/resources">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Academy</h1>
@@ -123,7 +124,7 @@
                 </div>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </main>
@@ -131,14 +132,17 @@
 </template>
 
 <script>
+import Header from '../components/Header'
 import Banner from '../components/Banner'
 export default {
   name: 'Resources',
   components: {
+    Header,
     Banner,
   },
   head() {
     return {
+      title: 'Resources',
       link: [
         {
           rel: 'stylesheet',

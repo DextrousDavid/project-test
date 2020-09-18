@@ -10,7 +10,8 @@
           to="/"
           class="flex items-center md:ml-10 flex-shrink-0 text-black mr-4"
         >
-          <img src="~/assets/cloudenly.png" alt="CloudenlyLogo" />
+          <img src="~assets/Cloudenly.svg" alt="Cloudenlylogo" />
+          <h1 class="ml-1 font-extrabold logo-text">Cloudenly</h1>
         </nuxt-link>
       </div>
 
@@ -58,7 +59,7 @@
           </nuxt-link>
 
           <nuxt-link
-            to="/resources"
+            to="/"
             class="block mt-2 lg:inline-block lg:mt-0 text-blue-500 px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
             Resources
@@ -75,14 +76,14 @@
           <!-- Sign in join us Now buttons -->
           <nuxt-link
             to="/"
-            class="inline-block text-sm py-4 leading-none rounded text-black hover:text-blue-500 px-1 py-1 mt-4 mr-3 lg:mt-0 undeline"
+            class="inline-block text-sm py-4 leading-none rounded text-black hover:text-blue-500 px-1 mt-4 mr-3 lg:mt-0 undeline"
           >
             Sign In
           </nuxt-link>
 
           <nuxt-link
             to="/wow"
-            class="inline-block text-sm px-4 py-4 leading-none border rounded text-blue-500 hover:bg-blue-500 hover:text-white hover:bg-white mt-4 mr-4 lg:mt-0 shadow-md duration-200"
+            class="inline-block text-sm px-4 py-4 leading-none border rounded text-blue-500 hover:bg-blue-500 hover:text-white mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Get Started
           </nuxt-link>
@@ -115,6 +116,11 @@ export default {
 </script>
 
 <style scoped>
+.logo-text {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
 * {
   font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',

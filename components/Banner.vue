@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="banner">
+    <section class="banner mb-4">
       <div class="content-center mr-3 ml-3">
         <h1 class="font-bold">How can we help you</h1>
         <div style="max-width: 550px; margin: auto">

@@ -10,7 +10,8 @@
           to="/"
           class="flex items-center lg:hidden lg:ml-10 flex-shrink-0 text-black mr-4"
         >
-          <img src="~/assets/cloudenly.png" alt="CloudenlyLogo" />
+          <img src="~/assets/Cloudenly.svg" alt="CloudenlyLogo" />
+          <h1 class="ml-1 font-black logo-text">Cloudenly</h1>
         </nuxt-link>
       </div>
 
@@ -106,6 +107,10 @@ export default {
 </script>
 
 <style scoped>
+.logo-text {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
 * {
   font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',

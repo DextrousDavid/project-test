@@ -1,76 +1,180 @@
-/* eslint-disable prettier/prettier */
 <template>
   <div>
     <Header />
-    <div class="container">
-      <div>
-        <Logo />
-        <h1 class="title">cloudenly-Resources</h1>
-        <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--green"
-            >Documentations</a
-          >
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--grey"
-            >GitHub</a
-          >
+    <Banner />
+    <main class="container mx-auto px-10 py-10">
+      <div class="flex flex-wrap -mx-2">
+        <!-- Row One Starts here! -->
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
+          <nuxt-link to="/userguide">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">User Guide</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+        <!-- Row Two Ends Here -->
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">White Paper</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">Blog</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">Community</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">FAQ</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 style="margin-bottom: -24px" class="font-bold">
+                  Developer Documentation
+                </h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">Events</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+        </div>
+
+        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
+          <nuxt-link to="/resources">
+            <div class="resource-card bg-gray-200">
+              <div class="text-center mr-3 ml-3">
+                <h1 class="font-bold">Academy</h1>
+                <div style="max-width: 400px; margin: auto">
+                  <p class="font-normal">
+                    Start a discussion, browse solutions, and get tips from us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
 <script>
 import Header from '../components/Header'
-
+import Banner from '../components/Banner'
 export default {
+  name: 'Resources',
   components: {
     Header,
+    Banner,
+  },
+  head() {
+    return {
+      title: 'Resources',
+      link: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://db.onlinewebfonts.com/c/0007c768c0c6149485a44a0409d9433c?family=GalanoGrotesque-Regular',
+        },
+      ],
+    }
   },
 }
 </script>
 
 <style scoped>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+* {
+  font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.resource-card {
+  padding: 80px 6px 15px 6px;
+  border-radius: 6px;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+h1 {
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: -50px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+p {
+  margin-top: 120px;
+  font-size: 14px;
 }
 </style>

@@ -54,8 +54,18 @@
         <h6 class="font-extrabold py-2">Support</h6>
         <ul>
           <li><a href="#">Support@cloudenly.com</a></li>
-          <li><a href="#">+234 8159530070</a></li>
-          <li><a href="#">+234 556655667</a></li>
+          <li>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=+2348159530070"
+              ><i class="fa fa-whatsapp" /> +234 8159530070</a
+            >
+          </li>
+          <li>
+            <a href="tel:+234556655667"
+              ><i class="fa fa-phone" aria-hidden="true" /> +234 556655667</a
+            >
+          </li>
         </ul>
       </div>
 

@@ -92,7 +92,7 @@
               placeholder="Email"
             />
             <button
-              class="bg-purple-500 ml-2 hover:bg-purple-600 text-white font-bold font-extrabold py-2 px-2"
+              class="bg-purple-500 ml-2 hover:bg-purple-600 text-white  py-2 px-2"
               type="submit"
             >
               Submit

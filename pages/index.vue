@@ -12,7 +12,7 @@
                 <h1 class="font-bold">User Guide</h1>
                 <div style="max-width: 400px; margin: auto">
                   <p class="font-normal">
-                    Start a discussion, browse solutions, and get tips from us
+                    Start a discussion, browse solutions, and get tips from us.
                   </p>
                 </div>
               </div>

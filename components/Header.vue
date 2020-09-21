@@ -82,7 +82,7 @@
           </nuxt-link>
 
           <nuxt-link
-            to="/wow"
+            to="/"
             class="inline-block text-sm px-4 py-4 leading-none border rounded text-blue-500 hover:bg-blue-500 hover:text-white mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Get Started

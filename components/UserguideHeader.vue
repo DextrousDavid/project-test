@@ -41,40 +41,40 @@
           <!-- Product link -->
           <nuxt-link
             to="/userguide"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
+            class="text-left block mt-4 lg:inline-block lg:mt-0 text-blue-500 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
           >
             User Guide
           </nuxt-link>
           <nuxt-link
             to="/"
-            class="block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
           >
             Whitepaper
           </nuxt-link>
           <nuxt-link
             to="/"
-            class="block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
           >
             Blogs
           </nuxt-link>
 
           <nuxt-link
             to="/"
-            class="block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
           >
             Community
           </nuxt-link>
 
           <nuxt-link
             to="/"
-            class="block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
           >
             Developer Documentation
           </nuxt-link>
 
           <nuxt-link
             to="/"
-            class="block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5 lg:mr-10"
           >
             Events
           </nuxt-link>

@@ -1,213 +1,127 @@
 <template>
   <div class="mt-5 mb-5">
     <div>
-      <multiselect
+      <v-select
+        :clearable="false"
         :close-on-select="false"
-        :searchable="true"
         placeholder="Use Optima to work"
-        :options="options"
-        :show-labels="false"
+        :options="useOptimaToWork"
+        label="title"
       >
-        <template slot="option" slot-scope="props">
-          <a href="/userguide/optima" target="_blank"
-            ><p>{{ props.option }}</p></a
-          >
+        <template v-slot:option="option">
+          {{ option.title }}
         </template>
-      </multiselect>
-      <div>
-        <multiselect
-          :searchable="true"
-          placeholder="Get started with Optima"
-          :options="getStartedOptions"
-          :show-labels="false"
-          :close-on-select="false"
-        >
-          <template slot="option" slot-scope="props">
-            <a href="/userguide/optima" target="_blank"
-              ><p>{{ props.option }}</p></a
-            >
-          </template>
-        </multiselect>
-      </div>
-      <div>
-        <multiselect
-          :close-on-select="false"
-          :searchable="true"
-          placeholder="Create and personalize a profile"
-          :options="getStartedOptions"
-          :show-labels="false"
-        >
-          <template slot="option" slot-scope="props">
-            <a href="/userguide/optima" target="_blank"
-              ><p>{{ props.option }}</p></a
-            >
-          </template>
-        </multiselect>
-      </div>
-
-      <div>
-        <multiselect
-          :close-on-select="false"
-          :searchable="true"
-          placeholder="Control your safety and privacy"
-          :options="getStartedOptions"
-          :show-labels="false"
-        >
-          <template slot="option" slot-scope="props">
-            <a href="/userguide/optima" target="_blank"
-              ><p>{{ props.option }}</p></a
-            >
-          </template>
-        </multiselect>
-      </div>
-
-      <div>
-        <multiselect
-          :close-on-select="false"
-          :searchable="true"
-          placeholder="Change Optima settings"
-          :options="getStartedOptions"
-          :show-labels="false"
-        >
-          <template slot="option" slot-scope="props">
-            <a href="/userguide/optima" target="_blank"
-              ><p>{{ props.option }}</p></a
-            >
-          </template>
-        </multiselect>
-      </div>
-
-      <div>
-        <multiselect
-          :close-on-select="false"
-          :searchable="true"
-          placeholder="Privacy in Optima"
-          :options="getStartedOptions"
-          :show-labels="false"
-        >
-          <template slot="option" slot-scope="props">
-            <a href="/userguide/optima" target="_blank"
-              ><p>{{ props.option }}</p></a
-            >
-          </template>
-        </multiselect>
-      </div>
-
-      <div>
-        <multiselect
-          :close-on-select="false"
-          :searchable="true"
-          placeholder="Create and personalize a profile"
-          :options="getStartedOptions"
-          :show-labels="false"
-        >
-          <template slot="option" slot-scope="props">
-            <a href="/userguide/optima" target="_blank"
-              ><p>{{ props.option }}</p></a
-            >
-          </template>
-        </multiselect>
-      </div>
-    </div>
-    <!-- <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
-        placeholder="Use Optima to work"
-      >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
+      </v-select>
     </div>
 
     <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
+      <v-select
+        :close-on-select="false"
+        :clearable="false"
         placeholder="Get started with Optima"
+        :options="getStartedWithOptima"
+        label="title"
       >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
+        <template v-slot:option="option">
+          <a href="/userguide/optima">
+            {{ option.title }}
+          </a>
+        </template>
+      </v-select>
     </div>
 
     <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
-        placeholder="Create and personalize a profile"
+      <v-select
+        :clearable="false"
+        :close-on-select="false"
+        placeholder="Get started with Optima"
+        :options="getStartedWithOptima"
+        label="title"
       >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
-    </div>
+        <template v-slot:option="option">
+          <a href="/userguide/optima">
+            {{ option.title }}
+          </a>
+        </template>
+      </v-select>
 
-    <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
-        placeholder="Control your safety and privacy"
-      >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
-    </div>
+      <div>
+        <v-select
+          :clearable="false"
+          :close-on-select="false"
+          placeholder="Create and personalize a profile"
+          :options="createAndPersonalizeAProfle"
+          label="title"
+        >
+        </v-select>
+      </div>
 
-    <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
-        placeholder="Change Optima settings"
-      >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
-    </div>
+      <div>
+        <v-select
+          :clearable="false"
+          :close-on-select="false"
+          placeholder="Control your safety and privacy"
+          :options="controlYourSafetyAndPrivacy"
+          label="title"
+        >
+          <template v-slot:option="option">
+            {{ option.title }}
+          </template>
+        </v-select>
+      </div>
 
-    <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
-        placeholder="Privacy in Optima"
-      >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
-    </div>
+      <div>
+        <v-select
+          :clearable="false"
+          :close-on-select="false"
+          placeholder="Change Optima settings"
+          :options="changeOptimaSettings"
+          label="title"
+        >
+          <template v-slot:option="option">
+            {{ option.title }}
+          </template>
+        </v-select>
+      </div>
 
-    <div>
-      <multiselect
-        v-model="value"
-        :options="options"
-        :searchable="true"
-        :close-on-select="true"
-        :show-labels="true"
-        placeholder="Create and personalize a profile"
-      >
-        <pre class="language-json"><code>{{ value  }}</code></pre>
-      </multiselect>
-    </div> -->
+      <div>
+        <v-select
+          :clearable="false"
+          :close-on-select="false"
+          placeholder="Privacy in Optima"
+          :options="privacyInOptima"
+          label="title"
+        >
+          <template v-slot:option="option">
+            {{ option.title }}
+          </template>
+        </v-select>
+      </div>
+
+      <div>
+        <v-select
+          :clearable="false"
+          :close-on-select="false"
+          placeholder="Create and personalize a profile"
+          :options="createAndPersonalizeAProfle"
+          label="title"
+        >
+          <template v-slot:option="option">
+            {{ option.title }}
+          </template>
+        </v-select>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import Multiselect from 'vue-multiselect'
+import VSelect from 'vue-select'
+import 'vue-select/dist/vue-select.css'
 
 export default {
   components: {
-    Multiselect,
+    VSelect,
   },
   data() {
     return {
@@ -219,13 +133,39 @@ export default {
       //     { name: 'Apple', value: 'apple' },
       //     { name: 'Grape', value: 'grape' },
       //   ],
-      options: ['Learn How to use Optima'],
+      useOptimaToWork: [],
 
-      getStartedOptions: [
-        'Get started with Optima',
-        'How do i log in on the app?',
-        'Tips and Tricks of Optima',
+      getStartedWithOptima: [
+        {
+          id: 1,
+          title: 'How do i log in on the app',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 2,
+          title: 'Tips and Tricks of Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 3,
+          title: 'Get started with Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 4,
+          title: 'Get started with Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 5,
+          title: 'How do i log in on the app',
+          url: 'https://facebook.com',
+        },
       ],
+      createAndPersonalizeAProfle: [],
+      controlYourSafetyAndPrivacy: [],
+      changeOptimaSettings: [],
+      privacyInOptima: [],
     }
   },
   head() {
@@ -241,8 +181,6 @@ export default {
   },
 }
 </script>
-
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 
 <style scoped>
 * {

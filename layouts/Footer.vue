@@ -136,7 +136,7 @@
               placeholder="Enter Email"
             />
             <button
-              class="bg-blue-500 ml-2 hover:bg-white hover:text-blue-500 text-white font-bold font-extrabold py-2 px-2 shadow-lg duration-200 border rounded"
+              class="bg-blue-500 ml-2 hover:bg-white hover:text-blue-500 text-white font-extrabold py-2 px-2 shadow-lg duration-200 border rounded"
               type="submit"
             >
               Submit

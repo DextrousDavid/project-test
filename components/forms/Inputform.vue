@@ -33,12 +33,14 @@ export default {
 
 /* Style the search field */
 form.example input[type='text'] {
-  padding: 10px;
-  font-size: 17px;
   float: left;
-  width: 80%;
-  color: #000;
+  width: 20%;
+  padding: 10px;
   background: #fff;
+  font-size: 17px;
+  color: #000;
+  border-right: none;
+  border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   outline: none;
   border: none;
@@ -60,10 +62,4 @@ form.example button {
   border: none;
 }
 
-/* Clear floats */
-form.example::after {
-  content: '';
-  clear: both;
-  display: table;
-}
 </style>

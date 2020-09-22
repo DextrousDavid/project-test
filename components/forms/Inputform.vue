@@ -39,8 +39,7 @@ export default {
 form.example input[type='text'] {
   padding: 12px;
   font-size: 17px;
-  float: left;
-  width: 80%;
+  width: 75%;
   color: #000;
   background: #fff;
   border-bottom-right-radius: 5px;
@@ -50,8 +49,8 @@ form.example input[type='text'] {
 
 /* Style the submit button */
 form.example button {
-  float: left;
-  width: 20%;
+  width: 24%;
+  margin-right: -10px;
   padding: 10px;
   background: #fff;
   color: #48b6f2;

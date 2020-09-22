@@ -4,7 +4,11 @@
       <button type="submit">
         <i class="fa fa-search" />
       </button>
-      <input type="text" placeholder="Describe your issue" name="search" />
+      <input
+        type="text"
+        placeholder="You should Describe your issue"
+        name="search"
+      />
     </div>
   </form>
 </template>
@@ -33,14 +37,12 @@ export default {
 
 /* Style the search field */
 form.example input[type='text'] {
-  float: left;
-  width: 20%;
   padding: 10px;
-  background: #fff;
   font-size: 17px;
-  color: #000;
-  border-right: none;
-  border-top-right-radius: 5px;
+  float: left;
+  width: 80%;
+  color: red;
+  background: #fff;
   border-bottom-right-radius: 5px;
   outline: none;
   border: none;
@@ -62,4 +64,10 @@ form.example button {
   border: none;
 }
 
+/* Clear floats */
+form.example::after {
+  content: '';
+  clear: both;
+  display: table;
+}
 </style>

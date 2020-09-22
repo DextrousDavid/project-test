@@ -1,6 +1,9 @@
 <template>
   <form class="example" style="margin-top: 30px">
-    <div class="mb-10" style="max-width: 550px; margin: auto">
+    <div
+      style="max-width: 400px; margin: auto"
+      class="flex items-center flex-shrink-0 justify-between mb-10"
+    >
       <button class="inline-block" type="submit">
         <i class="fa fa-search" />
       </button>
@@ -39,7 +42,6 @@ export default {
 form.example input[type='text'] {
   padding: 12px;
   font-size: 17px;
-  width: 75%;
   color: #000;
   background: #fff;
   border-bottom-right-radius: 5px;
@@ -49,7 +51,6 @@ form.example input[type='text'] {
 
 /* Style the submit button */
 form.example button {
-  width: 24%;
   margin-right: -10px;
   padding: 10px;
   background: #fff;

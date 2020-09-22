@@ -1,13 +1,13 @@
 <template>
   <form class="example" style="margin-top: 30px">
     <div class="mb-10" style="max-width: 550px; margin: auto">
-      <button type="submit">
+      <button class="inline-block" type="submit">
         <i class="fa fa-search" />
       </button>
       <input
+        class="inline-block bg-white appearance-none border-2 border-gray-200 w-full font-extrabold py-3 px-2 text-gray-700 leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
         type="text"
-        placeholder="You should Describe your issue"
-        name="search"
+        placeholder="Enter Email"
       />
     </div>
   </form>
@@ -37,11 +37,11 @@ export default {
 
 /* Style the search field */
 form.example input[type='text'] {
-  padding: 10px;
+  padding: 12px;
   font-size: 17px;
   float: left;
   width: 80%;
-  color: red;
+  color: #000;
   background: #fff;
   border-bottom-right-radius: 5px;
   outline: none;

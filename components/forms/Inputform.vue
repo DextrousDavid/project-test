@@ -8,7 +8,7 @@
         <i class="fa fa-search" />
       </button>
       <input
-        class="inline-block bg-white appearance-none border-2 border-gray-200 w-full font-extrabold text-gray-700 leading-tight focus:outline-none"
+        class="inline-block bg-white appearance-none border-none border-gray-200 w-full font-extrabold text-gray-700 leading-tight focus:outline-none"
         type="text"
         placeholder="Enter Email"
       />
@@ -44,6 +44,7 @@ form.example input[type='text'] {
   font-size: 17px;
   color: #000;
   background: #fff;
+  width: 70%;
   border-bottom-right-radius: 5px;
   outline: none;
   border: none;

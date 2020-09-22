@@ -4,7 +4,7 @@
       style="max-width: 600px; margin: auto"
       class="flex items-center flex-shrink-0 justify-between mb-10"
     >
-      <button class="inline-block py-3 px-2" type="submit">
+      <button class="inline-block w-20 py-3 px-2" type="submit">
         <i class="fa fa-search" />
       </button>
       <input

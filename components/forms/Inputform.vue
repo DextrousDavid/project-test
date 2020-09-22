@@ -4,11 +4,11 @@
       style="max-width: 600px; margin: auto"
       class="flex items-center flex-shrink-0 justify-between mb-10"
     >
-      <button class="inline-block w-20 border-none py-2 px-2" type="submit">
+      <button class="inline-block w-20 border-none  pt-2 py-2 px-2" type="submit">
         <i class="fa fa-search" />
       </button>
       <input
-        class="inline-block bg-white appearance-none border-1 border-gray-200 rounded-r-sm w-full font-extrabold py-3 px-2 text-gray-700 pt-1 leading-tight focus:outline-none"
+        class="inline-block bg-white appearance-none border-1 border-gray-200 rounded-r-sm w-full font-extrabold py-3 px-2 text-gray-700 pt-2 leading-tight focus:outline-none"
         type="text"
         placeholder="Enter Email"
       />

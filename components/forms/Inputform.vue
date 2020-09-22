@@ -5,13 +5,13 @@
       class="flex items-center flex-shrink-0 justify-between mb-10"
     >
       <button
-        class="inline-block w-20 border-none pt-2 py-2 px-2"
+        class="inline-block w-20 focus:outline-none pt-2 py-2 px-2 border-none appearance-none"
         type="submit"
       >
         <i class="fa fa-search" />
       </button>
       <input
-        class="inline-block bg-white appearance-none border-1 border-gray-200 rounded-r-sm w-full font-extrabold py-3 px-2 text-gray-700 pt-3 leading-tight focus:outline-none"
+        class="inline-block bg-white appearance-none rounded-r-sm w-full font-extrabold py-3 px-2 text-gray-700 pt-3 leading-tight focus:outline-none"
         type="text"
         placeholder="Enter Email"
       />
@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 * {
   box-sizing: border-box;
 }

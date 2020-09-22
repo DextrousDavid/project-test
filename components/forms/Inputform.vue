@@ -8,7 +8,7 @@
         <i class="fa fa-search" />
       </button>
       <input
-        class="inline-block bg-white appearance-none border-none rounded-r-sm w-full font-extrabold py-3 px-2 text-gray-700 leading-tight focus:outline-none"
+        class="inline-block bg-white appearance-none border-1 border-gray-200 rounded-r-sm w-full font-extrabold py-3 px-2 text-gray-700 leading-tight focus:outline-none"
         type="text"
         placeholder="Enter Email"
       />

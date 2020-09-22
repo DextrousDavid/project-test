@@ -8,7 +8,7 @@
         <i class="fa fa-search" />
       </button>
       <input
-        class="inline-block bg-white appearance-none border-2 border-gray-200 w-full font-extrabold py-3 px-2 text-gray-700 leading-tight focus:outline-none hover:border-blue-500 focus:bg-white focus:border-blue-500"
+        class="inline-block bg-white appearance-none border-2 border-gray-200 w-full font-extrabold py-3 px-2 text-gray-700 leading-tight focus:outline-none"
         type="text"
         placeholder="Enter Email"
       />
@@ -47,6 +47,8 @@ form.example input[type='text'] {
   border-bottom-right-radius: 5px;
   outline: none;
   border: none;
+  border-top-style: hidden;
+  border-left-style: hidden;
 }
 
 /* Style the submit button */

@@ -1,14 +1,14 @@
 <template>
   <form class="example" style="margin-top: 30px">
     <div
-      style="max-width: 400px; margin: auto"
+      style="max-width: 600px; margin: auto"
       class="flex items-center flex-shrink-0 justify-between mb-10"
     >
       <button class="inline-block" type="submit">
         <i class="fa fa-search" />
       </button>
       <input
-        class="inline-block bg-white appearance-none border-2 border-gray-200 w-full font-extrabold py-3 px-2 text-gray-700 leading-tight focus:outline-none"
+        class="inline-block bg-white appearance-none border-2 border-gray-200 w-full font-extrabold text-gray-700 leading-tight focus:outline-none"
         type="text"
         placeholder="Enter Email"
       />
@@ -53,6 +53,7 @@ form.example input[type='text'] {
 
 /* Style the submit button */
 form.example button {
+  width: 30%;
   margin-right: -10px;
   padding: 10px;
   background: #fff;
@@ -64,12 +65,5 @@ form.example button {
   cursor: pointer;
   outline: none;
   border: none;
-}
-
-/* Clear floats */
-form.example::after {
-  content: '';
-  clear: both;
-  display: table;
 }
 </style>

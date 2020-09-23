@@ -166,7 +166,7 @@ export default {
       useOptimaToWork: [
         {
           id: 1,
-          title: 'How do i log in on the app',
+          title: 'How do i log in on the app?',
           url: 'https://facebook.com',
         },
         {
@@ -186,7 +186,7 @@ export default {
         },
         {
           id: 5,
-          title: 'How do i log in on the app',
+          title: 'How do i log in on the app?',
           url: 'https://facebook.com',
         },
       ],
@@ -194,7 +194,7 @@ export default {
       getStartedWithOptima: [
         {
           id: 1,
-          title: 'How do i log in on the app',
+          title: 'How do i log in on the app?',
           url: 'https://facebook.com',
         },
         {
@@ -214,14 +214,14 @@ export default {
         },
         {
           id: 5,
-          title: 'How do i log in on the app',
+          title: 'How do i log in on the app?',
           url: 'https://facebook.com',
         },
       ],
       createAndPersonalizeAProfle: [
         {
           id: 1,
-          title: 'How do i log in on the app',
+          title: 'How do i log in on the app?',
           url: 'https://facebook.com',
         },
         {
@@ -241,7 +241,7 @@ export default {
         },
         {
           id: 5,
-          title: 'How do i log in on the app',
+          title: 'How do i log in on the app?',
           url: 'https://facebook.com',
         },
       ],

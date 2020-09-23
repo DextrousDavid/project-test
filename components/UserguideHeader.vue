@@ -3,7 +3,7 @@
     <!-- navbar starts here -->
     <!-- adjust padding 4 to add or remove padding from logo -->
     <nav
-      class="flex items-center justify-between flex-wrap bg-white p-4 pt-8 pb-10"
+      class="flex sm:w-full items-center justify-between flex-wrap bg-white sm:p-1 p-4 pt-8 pb-10"
     >
       <div class="flex items-center flex-shrink-0 text-black mr-6">
         <nuxt-link

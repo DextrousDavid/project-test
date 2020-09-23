@@ -58,12 +58,12 @@
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=+2348159530070"
-              ><i class="fa fa-whatsapp" /> +234 8159530070</a
+              ><i class="fas fa-whatsapp"></i> +234 8159530070</a
             >
           </li>
           <li>
             <a href="tel:+234556655667"
-              ><i class="fa fa-phone" aria-hidden="true" /> +234 556655667</a
+              ><i class="fab fa-phone" aria-hidden="true"></i> +234 556655667</a
             >
           </li>
         </ul>
@@ -158,6 +158,11 @@ export default {
           rel: 'stylesheet',
           href:
             'https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
+        },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
         },
         {
           rel: 'stylesheet',

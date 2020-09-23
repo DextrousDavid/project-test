@@ -2,7 +2,7 @@
   <div>
     <section class="banner mb-4">
       <div class="content-center mr-3 ml-3">
-        <h1 class="font-bold">How can we help you</h1>
+        <h1 class="font-bold">How can we help you?</h1>
         <div style="max-width: 550px; margin: auto">
           <p class="font-normal">
             Flexible pricing options, from personal projects to enterprise
@@ -72,9 +72,13 @@ p {
   color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 728px) {
   p {
     font-size: 18px;
+  }
+
+  h1 {
+    font-size: 40px;
   }
 
   .banner {

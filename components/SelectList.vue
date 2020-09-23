@@ -1,139 +1,195 @@
 <template>
   <div class="mt-5 mb-5">
-    <div>
-      <v-select
-        :clearable="false"
-        :close-on-select="false"
-        placeholder="Use Optima to work"
-        :options="useOptimaToWork"
-        label="title"
-      >
-        <template v-slot:option="option">
-          {{ option.title }}
-        </template>
-      </v-select>
-    </div>
-
-    <div>
-      <v-select
-        :close-on-select="false"
-        :clearable="false"
-        placeholder="Get started with Optima"
-        :options="getStartedWithOptima"
-        label="title"
-      >
-        <template v-slot:option="option">
-          <a href="/userguide/optima">
-            {{ option.title }}
-          </a>
-        </template>
-      </v-select>
-    </div>
-
-    <div>
-      <v-select
-        :clearable="false"
-        :close-on-select="false"
-        placeholder="Get started with Optima"
-        :options="getStartedWithOptima"
-        label="title"
-      >
-        <template v-slot:option="option">
-          <a href="/userguide/optima">
-            {{ option.title }}
-          </a>
-        </template>
-      </v-select>
-
+    <v-app>
       <div>
         <v-select
-          :clearable="false"
-          :close-on-select="false"
-          placeholder="Create and personalize a profile"
-          :options="createAndPersonalizeAProfle"
-          label="title"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="useOptimaToWork"
+          label="Use Optima to work"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
         >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
         </v-select>
-      </div>
 
-      <div>
+        <!-- 2 -->
+
         <v-select
-          :clearable="false"
-          :close-on-select="false"
-          placeholder="Control your safety and privacy"
-          :options="controlYourSafetyAndPrivacy"
-          label="title"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="getStartedWithOptima"
+          label="Get started with Optima"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
         >
-          <template v-slot:option="option">
-            {{ option.title }}
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            {{ data.item.title }}
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="createAndPersonalizeAProfle"
+          label="Create and personalize a profile"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="controlYourSafetyAndPrivacy"
+          label="Control your Safety and Privacy"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="changeOptimaSettings"
+          label="Change Optima Settings"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="privacyInOptima"
+          label="Privacy In Optima"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-b-2 border-gray-100"
+          background-color="white"
+          filled
+          :items="createAndPersonalizeAProfle"
+          label="Create and Personlize a profile"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
           </template>
         </v-select>
       </div>
-
-      <div>
-        <v-select
-          :clearable="false"
-          :close-on-select="false"
-          placeholder="Change Optima settings"
-          :options="changeOptimaSettings"
-          label="title"
-        >
-          <template v-slot:option="option">
-            {{ option.title }}
-          </template>
-        </v-select>
-      </div>
-
-      <div>
-        <v-select
-          :clearable="false"
-          :close-on-select="false"
-          placeholder="Privacy in Optima"
-          :options="privacyInOptima"
-          label="title"
-        >
-          <template v-slot:option="option">
-            {{ option.title }}
-          </template>
-        </v-select>
-      </div>
-
-      <div>
-        <v-select
-          :clearable="false"
-          :close-on-select="false"
-          placeholder="Create and personalize a profile"
-          :options="createAndPersonalizeAProfle"
-          label="title"
-        >
-          <template v-slot:option="option">
-            {{ option.title }}
-          </template>
-        </v-select>
-      </div>
-    </div>
+    </v-app>
   </div>
 </template>
 
 <script>
-import VSelect from 'vue-select'
-import 'vue-select/dist/vue-select.css'
-
 export default {
-  components: {
-    VSelect,
-  },
+  components: {},
   data() {
     return {
       isOpen: false,
       value: '',
-      //   options: ['Select option', 'label', 'touched'],
-      //   options: [
-      //     { name: 'Orange', value: 'orange' },
-      //     { name: 'Apple', value: 'apple' },
-      //     { name: 'Grape', value: 'grape' },
-      //   ],
-      useOptimaToWork: [],
+
+      useOptimaToWork: [
+        {
+          id: 1,
+          title: 'How do i log in on the app',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 2,
+          title: 'Tips and Tricks of Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 3,
+          title: 'Get started with Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 4,
+          title: 'Get started with Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 5,
+          title: 'How do i log in on the app',
+          url: 'https://facebook.com',
+        },
+      ],
 
       getStartedWithOptima: [
         {
@@ -162,7 +218,33 @@ export default {
           url: 'https://facebook.com',
         },
       ],
-      createAndPersonalizeAProfle: [],
+      createAndPersonalizeAProfle: [
+        {
+          id: 1,
+          title: 'How do i log in on the app',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 2,
+          title: 'Tips and Tricks of Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 3,
+          title: 'Get started with Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 4,
+          title: 'Get started with Optima',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 5,
+          title: 'How do i log in on the app',
+          url: 'https://facebook.com',
+        },
+      ],
       controlYourSafetyAndPrivacy: [],
       changeOptimaSettings: [],
       privacyInOptima: [],
@@ -182,10 +264,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 * {
   font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, sans-serif;
+}
+
+.custom-border.v-text-field > .v-input__control > .v-input__slot:before {
+  border-style: none;
+}
+.custom-border.v-text-field > .v-input__control > .v-input__slot:after {
+  border-style: none;
 }
 </style>

@@ -2,15 +2,15 @@
   <div>
     <UserguideHeader />
     <Banner />
-    <div class="mt-10 mb-8 flex items-center justify-center">
-      <nuxt-link to="/userguide/dome">
+    <div class="mt-8 mb-12 flex items-center justify-center">
+      <nuxt-link to="/userguide/humanaR">
         <div class="font-bold rounded-lg">
           <img
             class="mr-3 inline-block"
-            src="~assets/userguideIcons/Dome.png"
-            alt="domeLogo"
+            src="~assets/userguideIcons/HumanaR.png"
+            alt="humanaRLogo"
           />
-          <h1 class="inline-block">Dome</h1>
+          <h1 class="inline-block">HumanaR</h1>
         </div>
       </nuxt-link>
     </div>

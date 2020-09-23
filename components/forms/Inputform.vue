@@ -1,10 +1,20 @@
 <template>
   <form class="example" style="margin-top: 30px">
-    <div class="mb-10" style="max-width: 550px; margin: auto">
-      <button type="submit">
+    <div
+      style="max-width: 600px; margin: auto"
+      class="flex items-center flex-shrink-0 justify-between mb-10"
+    >
+      <button
+        class="inline-block w-20 focus:outline-none pt-2 py-2 px-2 border-none appearance-none"
+        type="submit"
+      >
         <i class="fa fa-search" />
       </button>
-      <input type="text" placeholder="Describe your issue" name="search" />
+      <input
+        class="inline-block bg-white appearance-none rounded-r-sm border border-white w-full py-3 px-2 text-gray-700 pt-3 leading-tight"
+        type="text"
+        placeholder="Describe your issue..."
+      />
     </div>
   </form>
 </template>
@@ -26,28 +36,27 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 * {
   box-sizing: border-box;
 }
 
 /* Style the search field */
 form.example input[type='text'] {
-  padding: 10px;
+  padding: 12px;
   font-size: 17px;
-  float: left;
-  width: 80%;
   color: #000;
   background: #fff;
   border-bottom-right-radius: 5px;
   outline: none;
   border: none;
+  border-top-style: hidden;
+  border-left-style: hidden;
 }
 
 /* Style the submit button */
 form.example button {
-  float: left;
-  width: 20%;
+  margin-right: -10px;
   padding: 10px;
   background: #fff;
   color: #48b6f2;

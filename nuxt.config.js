@@ -25,7 +25,14 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}, {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'} ,{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+
+    {rel:"stylesheet" ,
+    href: "https://use.fontawesome.com/releases/v5.2.0/css/all.css" ,
+    integrity:"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" ,
+    crossorigin: "anonymous"},
+
+  ],
   },
   /*
    ** Global CSS
@@ -48,6 +55,7 @@ export default {
     // // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    '@nuxtjs/vuetify',
     '@nuxtjs/tailwindcss',
   ],
   /*

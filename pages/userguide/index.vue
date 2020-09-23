@@ -39,17 +39,17 @@
         </div>
         <!-- Row 1 Ends Here -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
-          <nuxt-link to="/userguide/optima">
+          <nuxt-link to="/userguide/humanaR">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 400px; margin: auto">
                   <img
                     class="userguideicons"
-                    src="~assets/userguideIcons/Optima2.png"
-                    alt="optima2"
+                    src="~assets/userguideIcons/HumanaR.png"
+                    alt="humanaR"
                   />
-                  <h5 class="font-semibold">Optima</h5>
+                  <h5 class="font-semibold">HumanaR</h5>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
-          <nuxt-link to="/userguide/optima">
+          <nuxt-link to="/userguide/humanaR">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
                 <!-- <h1 class="font-bold">User Guide</h1> -->
@@ -139,7 +139,7 @@
                     src="~assets/userguideIcons/Optima3.png"
                     alt="optima3"
                   />
-                  <h5 class="font-semibold">Optima</h5>
+                  <h5 class="font-semibold">HumanaR</h5>
                 </div>
               </div>
             </div>

@@ -2,15 +2,15 @@
   <div>
     <UserguideHeader />
     <Banner />
-    <div class="mt-8 mb-12 flex items-center justify-center">
-      <nuxt-link to="/">
+    <div class="mt-10 mb-8 flex items-center justify-center">
+      <nuxt-link to="/userguide/lite">
         <div class="font-bold rounded-lg">
           <img
-            class="inline-block"
-            src="~assets/cloudenlylogo.png"
-            alt="cloudenlyLogo"
+            class="mr-3 inline-block"
+            src="~assets/userguideIcons/Lite.png"
+            alt="liteLogo"
           />
-          <h1 class="inline-block">Cloudenly</h1>
+          <h1 class="inline-block">Lite</h1>
         </div>
       </nuxt-link>
     </div>

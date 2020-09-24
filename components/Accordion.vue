@@ -391,7 +391,7 @@ export default {
       finances: [],
       payments: [],
       accounts: [],
-      approvalcyenters: [],
+      approvalcenters: [],
       settings: [],
     }
   },

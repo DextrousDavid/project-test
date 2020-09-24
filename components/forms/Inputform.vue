@@ -2,12 +2,9 @@
   <form class="example" style="margin-top: 30px">
     <div
       style="max-width: 600px; margin: auto"
-      class="flex items-center flex-shrink-0 justify-between mb-10 border-solid border-white"
+      class="flex items-center flex-shrink-0 justify-between mb-10"
     >
-      <button
-        class="inline-block w-20 focus:outline-none pt-2 py-2 px-2 border-none appearance-none"
-        type="submit"
-      >
+      <button class="inline-block w-20 pt-2 py-2 px-2" type="submit">
         <i class="fa fa-search" />
       </button>
       <input

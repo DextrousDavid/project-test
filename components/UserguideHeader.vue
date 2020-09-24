@@ -22,7 +22,7 @@
           @click="isOpen = !isOpen"
         >
           <svg
-            class="fill-current h-3 w-3"
+            class="fill-current h-4 w-4"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >

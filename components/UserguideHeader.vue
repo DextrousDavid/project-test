@@ -5,7 +5,7 @@
     <nav
       class="flex flex-wrap justify-between items-center bg-white p-4 pt-8 pb-10"
     >
-      <div class="flex flex-shrink-0 text-black mb-2 mr-6">
+      <div class="flex flex-shrink-0 text-black mb-2 mr-8">
         <nuxt-link
           to="/"
           class="flex items-center md:ml-8 flex-shrink-0 text-black"

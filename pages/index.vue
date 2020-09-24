@@ -21,7 +21,7 @@
         </div>
         <!-- Row Two Ends Here -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">White Paper</h1>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Blog</h1>
@@ -51,7 +51,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Community</h1>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">FAQ</h1>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 style="margin-bottom: -24px" class="font-bold">
@@ -98,7 +98,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Events</h1>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/resources">
+          <nuxt-link to="/">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">Academy</h1>

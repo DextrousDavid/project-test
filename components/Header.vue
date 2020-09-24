@@ -1,5 +1,6 @@
 <template>
   <header>
+    <!-- // Worked on the .logo-text style/class: reduced the margin-bottom also removed -mx-2 from header class -->
     <!-- navbar starts here -->
     <!-- adjust padding 4 to add or remove padding from logo -->
     <nav
@@ -8,7 +9,7 @@
       <div class="flex items-center flex-shrink-0 text-black mr-6">
         <nuxt-link
           to="/"
-          class="-mb-2 flex items-center md:ml-10 flex-shrink-0 text-black mr-4"
+          class="flex items-center md:ml-10 flex-shrink-0 text-black mr-4"
         >
           <img src="~assets/Cloudenly.svg" alt="Cloudenlylogo" />
           <h1 class="ml-1 font-extrabold logo-text">Cloudenly</h1>
@@ -118,7 +119,7 @@ export default {
 <style scoped>
 .logo-text {
   font-size: 20px;
-  margin-bottom: 2px;
+  margin-bottom: -5px;
 }
 
 * {

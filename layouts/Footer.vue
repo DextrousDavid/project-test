@@ -51,6 +51,11 @@
       <div
         class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
       >
+        <p>Icons</p>
+        <font-awesome-icon :icon="['fab', 'linkedin']" />
+        <font-awesome-icon :icon="['fab', 'github']" />
+        <font-awesome-icon :icon="['fab', 'facebook']" />
+        <font-awesome-icon :icon="['fas', 'coffee']" />
         <h6 class="font-extrabold py-2">Support</h6>
         <ul>
           <li><a href="#">Support@cloudenly.com</a></li>
@@ -114,8 +119,8 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap mb-3 w-full -mt-3 px-2">
-      <div class="w-full md:w-2/4 lg:w-3/4 mb-3 text-left">
+    <div class="flex flex-wrap mb-3 w-full -">
+      <div class="w-full mb-3 text-left">
         <p>
           &copy; Copyright 2020 Scelloo.com., All rights reserved. Scelloo HQ,
           Plot 16 New Creation Street, Lekki, Lagos, Nigeria<br />Terms of

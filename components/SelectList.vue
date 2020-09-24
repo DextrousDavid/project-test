@@ -1,32 +1,9 @@
 <template>
-  <div class="mt-5 mb-5">
+  <div class="mt-3 mb-5">
     <v-app>
-      <div>
+      <div class="xs:mx-1 sm:mx-1 md:mx-24 lg:mx-40">
         <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
-          background-color="white"
-          filled
-          :items="useOptimaToWork"
-          label="Use Optima to work"
-          item-text="title"
-          item-id="id"
-          hide-details
-          dense
-        >
-          <!-- To Add a new Icon -->
-          <template v-slot:append>
-            <v-icon color="primary">keyboard_arrow_down</v-icon>
-          </template>
-
-          <template slot="selection" slot-scope="data">
-            <span class="bg--red">{{ data.item.title }}</span>
-          </template>
-        </v-select>
-
-        <!-- 2 -->
-
-        <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"
           filled
           :items="getStartedWithOptima"
@@ -47,11 +24,34 @@
         </v-select>
 
         <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"
           filled
-          :items="createAndPersonalizeAProfle"
-          label="Create and personalize a profile"
+          :items="crm"
+          label="Customer relationship management (CRM)"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <!-- 2 -->
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
+          background-color="white"
+          filled
+          :items="purchase"
+          label="Purchase"
           item-text="title"
           item-id="id"
           hide-details
@@ -68,11 +68,11 @@
         </v-select>
 
         <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"
           filled
-          :items="controlYourSafetyAndPrivacy"
-          label="Control your Safety and Privacy"
+          :items="sales"
+          label="Sales"
           item-text="title"
           item-id="id"
           hide-details
@@ -89,11 +89,11 @@
         </v-select>
 
         <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"
           filled
-          :items="changeOptimaSettings"
-          label="Change Optima Settings"
+          :items="inventory"
+          label="Inventory"
           item-text="title"
           item-id="id"
           hide-details
@@ -110,11 +110,11 @@
         </v-select>
 
         <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-100"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"
           filled
-          :items="privacyInOptima"
-          label="Privacy In Optima"
+          :items="production"
+          label="Production"
           item-text="title"
           item-id="id"
           hide-details
@@ -131,11 +131,95 @@
         </v-select>
 
         <v-select
-          class="custom-border border-t-2 border-l-2 border-r-2 border-b-2 border-gray-100"
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"
           filled
-          :items="createAndPersonalizeAProfle"
-          label="Create and Personlize a profile"
+          :items="finance"
+          label="Finance"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span>{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
+          background-color="white"
+          filled
+          :items="payment"
+          label="Payment"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
+          background-color="white"
+          filled
+          :items="accounts"
+          label="Accounts"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
+          background-color="white"
+          filled
+          :items="approvalCenter"
+          label="Approval Center"
+          item-text="title"
+          item-id="id"
+          hide-details
+          dense
+        >
+          <!-- To Add a new Icon -->
+          <template v-slot:append>
+            <v-icon color="primary">keyboard_arrow_down</v-icon>
+          </template>
+
+          <template slot="selection" slot-scope="data">
+            <span class="bg--red">{{ data.item.title }}</span>
+          </template>
+        </v-select>
+
+        <v-select
+          class="custom-border border-t-2 border-b-2 border-l-2 border-r-2 border-gray-200 rounded-b-lg"
+          background-color="white"
+          filled
+          :items="settings"
+          label="Settings"
           item-text="title"
           item-id="id"
           hide-details
@@ -163,30 +247,30 @@ export default {
       isOpen: false,
       value: '',
 
-      useOptimaToWork: [
+      crm: [
         {
           id: 1,
-          title: 'How do i log in on the app?',
+          title: 'Customer Registration',
           url: 'https://facebook.com',
         },
         {
           id: 2,
-          title: 'Tips and Tricks of Optima',
+          title: 'Customer Engagement',
           url: 'https://facebook.com',
         },
         {
           id: 3,
-          title: 'Get started with Optima',
+          title: 'Pipeline Management',
           url: 'https://facebook.com',
         },
         {
           id: 4,
-          title: 'Get started with Optima',
+          title: 'Promotions',
           url: 'https://facebook.com',
         },
         {
           id: 5,
-          title: 'How do i log in on the app?',
+          title: 'Meeting',
           url: 'https://facebook.com',
         },
       ],
@@ -218,36 +302,129 @@ export default {
           url: 'https://facebook.com',
         },
       ],
-      createAndPersonalizeAProfle: [
+      purchase: [
         {
           id: 1,
-          title: 'How do i log in on the app?',
+          title: 'Supplier',
           url: 'https://facebook.com',
         },
         {
           id: 2,
-          title: 'Tips and Tricks of Optima',
+          title: 'Catalogue',
           url: 'https://facebook.com',
         },
         {
           id: 3,
-          title: 'Get started with Optima',
+          title: 'Purchase Requistion (PR)',
           url: 'https://facebook.com',
         },
         {
           id: 4,
-          title: 'Get started with Optima',
+          title: 'Request for Quote (RFQ)',
           url: 'https://facebook.com',
         },
         {
           id: 5,
-          title: 'How do i log in on the app?',
+          title: 'Quote',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 6,
+          title: 'Purchase Order (PO)',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 7,
+          title: 'Invoice',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 8,
+          title: 'Debit Note',
           url: 'https://facebook.com',
         },
       ],
-      controlYourSafetyAndPrivacy: [],
-      changeOptimaSettings: [],
+      sales: [
+        {
+          id: 1,
+          title: 'Catalogue',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 2,
+          title: 'Pricebook',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 3,
+          title: 'Request for Quote (RFQ)',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 5,
+          title: 'Quote',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 6,
+          title: 'Purchase Order (PO)',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 7,
+          title: 'Invoice',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 8,
+          title: 'Waybill',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 8,
+          title: 'Credit Note',
+          url: 'https://facebook.com',
+        },
+      ],
+      inventory: [
+        {
+          id: 1,
+          title: 'Outlets and Inventory Classes',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 2,
+          title: 'Stock Balance',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 3,
+          title: 'Waybill',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 4,
+          title: 'Goods Received Note',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 5,
+          title: 'Material Request',
+          url: 'https://facebook.com',
+        },
+        {
+          id: 6,
+          title: 'Material Return',
+          url: 'https://facebook.com',
+        },
+      ],
       privacyInOptima: [],
+      production: [],
+      finance: [],
+      payment: [],
+      accounts: [],
+      approvalCenter: [],
+      settings: [],
     }
   },
   head() {

@@ -2,15 +2,18 @@
   <div>
     <UserguideHeader />
     <Banner />
-    <div class="mt-10 mb-8 flex items-center justify-center">
+    <div class="mt-12 mb-8 flex items-center text-center justify-center">
       <nuxt-link to="/userguide/lite">
-        <div class="font-bold rounded-lg">
+        <div class="rounded-lg">
           <img
             class="mr-3 inline-block"
             src="~assets/userguideIcons/Lite.png"
-            alt="liteLogo"
+            alt="LiteLogo"
           />
-          <h1 class="inline-block">Lite</h1>
+          <h1 class="font-bold inline-block">Lite</h1>
+          <!-- The one below Doesnt look to Good -->
+          <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
+          <h2 class="ml-4 font-medium">User Guide</h2>
         </div>
       </nuxt-link>
     </div>
@@ -49,6 +52,9 @@ h1 {
   margin-left: -8px;
 }
 
+h2 {
+  font-size: 20px;
+}
 img {
   margin-top: -28px;
   height: 80px;

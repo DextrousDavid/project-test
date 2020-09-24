@@ -51,9 +51,8 @@ a {
 }
 h1 {
   margin-top: -50px;
-  font-size: 2em;
   padding: 10px 0;
-  font-size: 50px;
+  font-size: 44px;
   vertical-align: top;
 }
 p {
@@ -78,7 +77,7 @@ p {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .banner {

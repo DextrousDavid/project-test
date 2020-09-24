@@ -5,7 +5,7 @@
     <nav
       class="flex flex-wrap justify-between items-center bg-white p-4 pt-8 pb-10"
     >
-      <div class="flex flex-shrink-0 text-black mb-2">
+      <div class="flex flex-shrink-0 text-black mb-2 mr-6">
         <nuxt-link
           to="/"
           class="flex items-center md:ml-8 flex-shrink-0 text-black"
@@ -41,40 +41,40 @@
           <!-- Product link -->
           <nuxt-link
             to="/userguide"
-            class="text-left block mt-4 lg:inline-block lg:mt-0 text-blue-500 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-10"
+            class="text-left block mt-4 lg:inline-block lg:mt-0 text-blue-500 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             User Guide
           </nuxt-link>
           <nuxt-link
             to="/"
-            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black py-1 hover:bg-gray-200 rounded mr-3 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             Whitepaper
           </nuxt-link>
           <nuxt-link
             to="/"
-            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             Blogs
           </nuxt-link>
 
           <nuxt-link
             to="/"
-            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             Community
           </nuxt-link>
 
           <nuxt-link
             to="/"
-            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             Developer Documentation
           </nuxt-link>
 
           <nuxt-link
             to="/"
-            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded lg:mr-10"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-2"
           >
             Events
           </nuxt-link>

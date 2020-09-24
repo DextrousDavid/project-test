@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3 mb-5">
     <v-app>
-      <div class="xs:w-full sm:w-full md:mx-24 lg:mx-40">
+      <div class="xs:mx-0 sm:mx-0 md:mx-32 lg:mx-48">
         <v-select
           class="custom-border border-t-2 border-l-2 border-r-2 border-gray-200"
           background-color="white"

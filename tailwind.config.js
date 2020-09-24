@@ -8,12 +8,12 @@
 module.exports = {
   theme: {},
   variants: {
-    backgroundColor: [
-      'responsive',
-      'hover',
-      'focus',
-      'active'
-    ]
+    // backgroundColor: [
+    //   'responsive',
+    //   'hover',
+    //   'focus',
+    //   'active'
+    // ]
   },
   plugins: [],
   purge: {

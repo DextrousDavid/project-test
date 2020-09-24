@@ -20,7 +20,7 @@
 
     <!-- main content -->
     <main class="container mx-auto px-12">
-      <SelectList />
+      <Accordion />
     </main>
   </div>
 </template>
@@ -28,13 +28,13 @@
 <script>
 import Banner from '../../components/Banner'
 import UserguideHeader from '../../components/UserguideHeader'
-import SelectList from '../../components/SelectList'
+import Accordion from '../../components/Accordion'
 
 export default {
   components: {
     UserguideHeader,
     Banner,
-    SelectList,
+    Accordion,
   },
 }
 </script>

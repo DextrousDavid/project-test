@@ -51,11 +51,6 @@
       <div
         class="w-full sm:w-1/2 sm:text-center md:text-left md:w-2/4 lg:w-1/5 pl:w-1/5-8 mb-6 px-2"
       >
-        <p>Icons</p>
-        <font-awesome-icon :icon="['fab', 'linkedin']" />
-        <font-awesome-icon :icon="['fab', 'github']" />
-        <font-awesome-icon :icon="['fab', 'facebook']" />
-        <font-awesome-icon :icon="['fas', 'coffee']" />
         <h6 class="font-extrabold py-2">Support</h6>
         <ul>
           <li><a href="#">Support@cloudenly.com</a></li>
@@ -63,12 +58,13 @@
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=+2348159530070"
-              ><i class="fas fa-whatsapp"></i> +234 8159530070</a
+              ><font-awesome-icon :icon="['fab', 'whatsapp']" /> +234
+              8159530070</a
             >
           </li>
           <li>
             <a href="tel:+234556655667"
-              ><i class="fab fa-phone" aria-hidden="true"></i> +234 556655667</a
+              ><font-awesome-icon :icon="['fas', 'phone']" /> +234 556655667</a
             >
           </li>
         </ul>
@@ -110,12 +106,11 @@
     <!-- Newsletter Button and copyight -->
     <div class="flex flex-wrap mb-3 w-full">
       <div class="w-full mb-6 px-2">
-        <i class="fa fa-lg fa-whatsapp mr-2" aria-hidden="true" />
-        <i class="fa fa-lg fa-twitter mr-2" aria-hidden="true" />
-        <i class="fa fa-lg fa-facebook mr-2" />
-        <button>
-          <i class="fa fa-lg fa-instagram mr-2" aria-hidden="true" />
-        </button>
+        <font-awesome-icon :icon="['fab', 'whatsapp']" /><span> </span>
+
+        <font-awesome-icon :icon="['fab', 'twitter']" />
+        <font-awesome-icon :icon="['fab', 'facebook']" />
+        <font-awesome-icon :icon="['fab', 'instagram']" />
       </div>
     </div>
 

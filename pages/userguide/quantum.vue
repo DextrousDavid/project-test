@@ -13,7 +13,7 @@
           <h1 class="font-bold inline-block">Quantum</h1>
           <!-- The one below Doesnt look to Good -->
           <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-          <h2 class="-ml-16 font-medium">User Guide</h2>
+          <h2 class="-ml-6 -mt-2 font-normal">User Guide</h2>
         </div>
       </nuxt-link>
     </div>

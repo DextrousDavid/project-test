@@ -2,11 +2,13 @@
   <header>
     <!-- navbar starts here -->
     <!-- adjust padding 4 to add or remove padding from logo -->
-    <nav class="flex sm:w-full flex-wrap bg-white p-4 pt-8 pb-10">
+    <nav
+      class="flex flex-wrap justify-between items-center bg-white p-4 pt-8 pb-10"
+    >
       <div class="flex flex-shrink-0 text-black mb-2">
         <nuxt-link
           to="/"
-          class="flex items-center md:ml-10 flex-shrink-0 text-black"
+          class="flex items-center md:ml-8 flex-shrink-0 text-black"
         >
           <img src="~/assets/Cloudenly.svg" alt="CloudenlyLogo" />
           <h1 class="ml-1 font-black logo-text">Cloudenly</h1>
@@ -20,7 +22,7 @@
           @click="isOpen = !isOpen"
         >
           <svg
-            class="fill-current h-4 w-4"
+            class="fill-current h-3 w-3"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -33,7 +35,7 @@
       <!-- display block - Lists -->
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal text-center"
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal"
       >
         <div class="text-sm lg:flex-grow" @click="isOpen = !isOpen">
           <!-- Product link -->

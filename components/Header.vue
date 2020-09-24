@@ -119,7 +119,7 @@ export default {
 <style scoped>
 .logo-text {
   font-size: 20px;
-  margin-bottom: -5px;
+  margin-bottom: -3px;
 }
 
 * {

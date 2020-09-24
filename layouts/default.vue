@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 html {
   font-family: 'GalanoGrotesque-Regular', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

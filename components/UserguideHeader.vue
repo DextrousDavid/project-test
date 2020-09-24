@@ -109,7 +109,7 @@ export default {
 <style scoped>
 .logo-text {
   font-size: 20px;
-  margin-bottom: 1px;
+  margin-bottom: -3px;
 }
 * {
   font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',

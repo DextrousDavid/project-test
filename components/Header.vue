@@ -6,7 +6,7 @@
     <nav
       class="flex items-center justify-between flex-wrap bg-white p-4 pt-8 pb-10"
     >
-      <div class="flex items-center flex-shrink-0 text-black mr-6">
+      <div class="flex items-center flex-shrink-0 text-black mr-20">
         <nuxt-link
           to="/"
           class="flex items-center md:ml-10 flex-shrink-0 text-black mr-4"
@@ -23,7 +23,7 @@
           @click="isOpen = !isOpen"
         >
           <svg
-            class="fill-current h-3 w-3"
+            class="fill-current h-6 w-6"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >

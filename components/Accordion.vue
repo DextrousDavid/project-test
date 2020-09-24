@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <v-app>
-      <div class="xs:mx-0 sm:mx-0 md:mx-32 lg:mx-48">
+      <div class="xs:w-auto sm:w-auto md:mx-32 lg:mx-48">
         <v-expansion-panels open-direction="bottom" accordion hover>
           <v-expansion-panel>
             <v-expansion-panel-header>
@@ -391,7 +391,7 @@ export default {
       finances: [],
       payments: [],
       accounts: [],
-      approvalCenters: [],
+      approvalcenters: [],
       settings: [],
     }
   },

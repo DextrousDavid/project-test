@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <v-app>
-      <div class="xs:mx-16 sm:mx-16 md:mx-40 lg:mx-48">
+      <div class="xs:px-16 sm:px-16 md:mx-40 lg:mx-48">
         <v-expansion-panels tile:true accordion hover>
           <v-expansion-panel>
             <v-expansion-panel-header>
@@ -14,7 +14,8 @@
             <v-expansion-panel-content
               v-for="getStartedWithOptima in getStartedWithOptimas"
               :key="getStartedWithOptima.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
+              hover
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ getStartedWithOptima.title }}</div>
@@ -33,7 +34,7 @@
             <v-expansion-panel-content
               v-for="crm in crms"
               :key="crm.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ crm.title }}</div>
@@ -52,7 +53,7 @@
             <v-expansion-panel-content
               v-for="purchase in purchases"
               :key="purchase.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ purchase.title }}</div>
@@ -71,7 +72,7 @@
             <v-expansion-panel-content
               v-for="sale in sales"
               :key="sale.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ sale.title }}</div>
@@ -90,7 +91,7 @@
             <v-expansion-panel-content
               v-for="inventory in inventories"
               :key="inventory.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ inventory.title }}</div>
@@ -109,7 +110,7 @@
             <v-expansion-panel-content
               v-for="production in productions"
               :key="production.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ production.title }}</div>
@@ -128,7 +129,7 @@
             <v-expansion-panel-content
               v-for="finance in finances"
               :key="finance.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ finance.title }}</div>
@@ -147,7 +148,7 @@
             <v-expansion-panel-content
               v-for="payment in payments"
               :key="payment.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ payment.title }}</div>
@@ -166,7 +167,7 @@
             <v-expansion-panel-content
               v-for="account in accounts"
               :key="account.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ account.title }}</div>
@@ -185,7 +186,7 @@
             <v-expansion-panel-content
               v-for="approvalcenter in approvalcenters"
               :key="approvalcenter.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ approvalcenter.title }}</div>
@@ -204,7 +205,7 @@
             <v-expansion-panel-content
               v-for="setting in settings"
               :key="setting.id"
-              color="grey lighten-3"
+              color="blue-grey lighten-5"
             >
               <nuxt-link to="/">
                 <div style="color: #000">{{ setting.title }}</div>

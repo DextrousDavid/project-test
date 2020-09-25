@@ -6,10 +6,10 @@
     <nav
       class="flex items-center justify-between flex-wrap bg-white p-4 pt-8 pb-10"
     >
-      <div class="flex items-center flex-shrink-0 text-black mr-20">
+      <div class="flex items-center flex-shrink-0 text-black mr-6">
         <nuxt-link
           to="/"
-          class="flex items-center md:ml-10 flex-shrink-0 text-black mr-20"
+          class="flex items-center md:ml-10 flex-shrink-0 text-black"
         >
           <img src="~assets/Cloudenly.svg" alt="Cloudenlylogo" />
           <h1 class="ml-1 font-extrabold logo-text">Cloudenly</h1>
@@ -19,7 +19,7 @@
       <div class="block lg:hidden">
         <button
           type="button"
-          class="flex items-center px-3 py-2 border rounded text-black border-black shadow-md focus:outline-none outline-none"
+          class="flex items-center px-3 py-2 border rounded text-black border-black shadow-md"
           @click="isOpen = !isOpen"
         >
           <svg
@@ -36,7 +36,7 @@
       <!-- display block - Lists -->
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal ml-20"
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal"
       >
         <div class="text-sm lg:flex-grow" @click="isOpen = !isOpen">
           <!-- Product link -->

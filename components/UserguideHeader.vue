@@ -5,7 +5,7 @@
     <nav
       class="flex flex-wrap justify-between items-center bg-white p-4 pt-8 pb-10"
     >
-      <div class="flex flex-shrink-0 text-black mb-2 mr-16">
+      <div class="flex flex-shrink-0 text-black mb-2 xl:mr-16">
         <nuxt-link
           to="/"
           class="flex items-center md:ml-8 flex-shrink-0 text-black"
@@ -35,7 +35,7 @@
       <!-- display block - Lists -->
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal"
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal md:ml-24"
       >
         <div class="text-sm lg:flex-grow" @click="isOpen = !isOpen">
           <!-- Product link -->

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <v-app>
-      <div class="xs:mx-2 sm:mx-6 lg:mx-48 appearance-none">
+      <div class="xs:mx-16 sm:mx-16 md:mx-40 lg:mx-48">
         <v-expansion-panels tile:true accordion hover>
           <v-expansion-panel>
             <v-expansion-panel-header>
@@ -421,6 +421,6 @@ export default {
 
 .v-expansion-panel-header {
   outline: none !important;
-  font-weight: 800;
+  font-weight: 500;
 }
 </style>

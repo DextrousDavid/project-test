@@ -114,8 +114,10 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap mb-3 w-full -">
-      <div class="w-full mb-3 text-left">
+    <div
+      class="flex flex-wrap mb-3 w-full -mt-3 xs:-px-8 sm:-px-8 md:px-2 lg:px-2"
+    >
+      <div class="w-full md:w-2/4 lg:w-3/4 mb-3 text-left">
         <p>
           &copy; Copyright 2020 Scelloo.com., All rights reserved. Scelloo HQ,
           Plot 16 New Creation Street, Lekki, Lagos, Nigeria<br />Terms of

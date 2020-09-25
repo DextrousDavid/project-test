@@ -18,7 +18,7 @@
 
     <!-- main content -->
     <main class="container mx-auto px-10 py-10">
-      <div class="flex flex-wrap -mx-2">
+      <div class="flex flex-wrap">
         <!-- Row One Starts here! -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/optima">

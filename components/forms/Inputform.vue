@@ -1,20 +1,28 @@
 <template>
   <form class="example" style="margin-top: 30px">
     <div
-      style="max-width: 600px; margin: auto"
+      style="max-width: 500px; margin: auto"
       class="flex items-center flex-shrink-0 justify-between mb-10 focus:outline-none outline-none"
     >
-      <button
+      <v-text-field placeholder="Describe your issue..." solo>
+        <template v-slot:append>
+          <v-btn icon color="success">
+            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+          </v-btn>
+        </template>
+      </v-text-field>
+      <!-- <button
         class="inline-block w-20 pt-2 py-2 px-2 border-none appearance-none focus:outline-none outline-none"
         type="submit"
       >
-        <i class="fa fa-search" />
+        
       </button>
       <input
         class="inline-block bg-white outline-none focus:outline-none appearance-none border border-white w-full py-3 px-2 text-gray-700 pt-3 leading-tight"
         type="text"
         placeholder="Describe your issue..."
-      />
+      /> -->
     </div>
   </form>
 </template>
@@ -41,37 +49,17 @@ export default {
   box-sizing: border-box;
 }
 
-/* Style the search field */
-form.example input[type='text'] {
-  padding: 12px;
-  font-size: 17px;
-  color: #000;
-  background: #fff;
-  border-bottom-right-radius: 5px;
-  outline: none;
-  border: none;
-  border-top-style: hidden;
-  border-left-style: hidden;
+i {
+  color: rgb(59, 178, 226);
+  padding-left: 10px;
+  margin-left: -20px;
 }
 
-/* Style the submit button */
-form.example button {
-  margin-right: -10px;
-  padding: 10px;
-  background: #fff;
-  color: #48b6f2;
-  font-size: 17px;
-  border-left: none; /* Prevent double borders */
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  cursor: pointer;
-  border: none;
+i.v-icon.v-icon {
+  color: blue;
 }
 
-/* Clear floats */
-form.example::after {
-  content: '';
-  clear: both;
-  display: table;
+v-btn {
+  color: red;
 }
 </style>

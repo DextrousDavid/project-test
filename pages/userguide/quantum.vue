@@ -19,7 +19,7 @@
     </div>
 
     <!-- main content -->
-    <main class="container mx-auto px-12">
+    <main class="container">
       <Accordion />
     </main>
   </div>

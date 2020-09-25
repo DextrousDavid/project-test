@@ -9,7 +9,7 @@
       <div class="flex items-center flex-shrink-0 text-black mr-20">
         <nuxt-link
           to="/"
-          class="flex items-center md:ml-10 flex-shrink-0 text-black mr-4"
+          class="flex items-center md:ml-10 flex-shrink-0 text-black mr-20"
         >
           <img src="~assets/Cloudenly.svg" alt="Cloudenlylogo" />
           <h1 class="ml-1 font-extrabold logo-text">Cloudenly</h1>

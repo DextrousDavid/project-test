@@ -1,8 +1,8 @@
 <template>
   <div class="mt-3">
     <v-app>
-      <div class="xs:mx-auto sm:mx-auto lg:mx-48 appearance-none">
-        <v-expansion-panels open-direction="bottom" accordion hover>
+      <div class="xs:mx-2 sm:mx-6 lg:mx-48 appearance-none">
+        <v-expansion-panels tile:true accordion hover>
           <v-expansion-panel>
             <v-expansion-panel-header>
               Get started with Optima
@@ -417,5 +417,10 @@ export default {
 }
 .v-expansion-panel::before {
   outline: none !important;
+}
+
+.v-expansion-panel-header {
+  outline: none !important;
+  font-weight: 800;
 }
 </style>

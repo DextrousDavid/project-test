@@ -6,7 +6,7 @@
     <nav
       class="flex items-center justify-between flex-wrap bg-white p-4 pt-8 pb-10"
     >
-      <div class="flex items-center flex-shrink-0 text-black mr-2">
+      <div class="flex items-center flex-shrink-0 text-black mr-2 xl:mr-20">
         <nuxt-link
           to="/"
           class="flex items-center md:ml-10 flex-shrink-0 text-black"
@@ -19,7 +19,7 @@
       <div class="block lg:hidden">
         <button
           type="button"
-          class="flex items-center px-3 py-2 border rounded text-black border-black shadow-md"
+          class="flex items-center px-3 py-2 rounded text-black shadow-md hover:bg-gray-200 btnscoped"
           @click="isOpen = !isOpen"
         >
           <svg
@@ -126,5 +126,9 @@ export default {
   font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, sans-serif;
+}
+
+.btnscoped {
+  outline: none;
 }
 </style>

@@ -7,8 +7,8 @@
       <nuxt-link to="/">
         <div class="font-extrabold rounded-lg">
           <img
-            class="img-logo inline-block"
-            src="~assets/cloudenlylogo.png"
+            class="img-logo inline-block fill-current h-20 w-20"
+            src="~assets/Cloudenly.svg"
             alt="cloudenlyLogo"
           />
           <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
@@ -173,12 +173,11 @@ h1 {
   font-size: 40px;
   margin-bottom: -20px;
   font-weight: 900;
-  margin-left: -5px;
+  margin-left: 2px;
 }
 
 .img-logo {
   margin-top: -28px;
-  height: 80px;
 }
 h5 {
   margin-top: 20px;

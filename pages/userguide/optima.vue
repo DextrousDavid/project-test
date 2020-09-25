@@ -19,7 +19,7 @@
     </div>
 
     <!-- main content -->
-    <main class="sm:mx-1">
+    <main class="container">
       <Accordion />
     </main>
   </div>

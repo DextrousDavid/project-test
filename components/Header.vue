@@ -19,7 +19,7 @@
       <div class="block lg:hidden">
         <button
           type="button"
-          class="flex items-center px-3 py-2 border rounded text-black border-black shadow-md"
+          class="flex items-center px-3 py-2 border rounded text-black border-black shadow-md focus:outline-none outline-none"
           @click="isOpen = !isOpen"
         >
           <svg
@@ -36,7 +36,7 @@
       <!-- display block - Lists -->
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal"
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto font-normal ml-20"
       >
         <div class="text-sm lg:flex-grow" @click="isOpen = !isOpen">
           <!-- Product link -->

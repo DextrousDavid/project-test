@@ -17,7 +17,7 @@
     </div>
 
     <!-- main content -->
-    <main class="container mx-auto px-10 py-50">
+    <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap -mx-2">
         <!-- Row One Starts here! -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
@@ -27,7 +27,7 @@
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 300px; margin: auto">
                   <img
-                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-5 hover:scale-500 ..."
+                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/userguideIcons/Optima1.png"
                     alt="optima1"
                   />
@@ -45,7 +45,7 @@
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 300px; margin: auto">
                   <img
-                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-5 hover:scale-500 ..."
+                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/userguideIcons/HumanaR.png"
                     alt="humanaR"
                   />
@@ -63,7 +63,7 @@
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 300px; margin: auto">
                   <img
-                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-5 hover:scale-500 ..."
+                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/userguideIcons/Dome.png"
                     alt="Dome"
                   />
@@ -81,7 +81,7 @@
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 300px; margin: auto">
                   <img
-                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-5 hover:scale-500 ..."
+                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/userguideIcons/Ally.png"
                     alt="Ally"
                   />
@@ -99,7 +99,7 @@
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 300px; margin: auto">
                   <img
-                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-5 hover:scale-500 ..."
+                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/userguideIcons/Quantum.png"
                     alt="Quantum"
                   />
@@ -117,7 +117,7 @@
                 <!-- <h1 class="font-bold">User Guide</h1> -->
                 <div style="max-width: 300px; margin: auto">
                   <img
-                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-5 hover:scale-500 ..."
+                    class="userguideicons transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-300 ..."
                     src="~assets/userguideIcons/Lite.png"
                     alt="Lite"
                   />

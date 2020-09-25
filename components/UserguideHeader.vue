@@ -18,7 +18,7 @@
       <div class="block lg:hidden">
         <button
           type="button"
-          class="flex items-center px-3 py-2 border rounded text-black border-black shadow-md"
+          class="flex items-center px-3 py-2 border rounded text-black focus:outline-none outline-none shadow-md"
           @click="isOpen = !isOpen"
         >
           <svg

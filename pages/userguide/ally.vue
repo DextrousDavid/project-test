@@ -13,7 +13,25 @@
           <h1 class="font-bold inline-block">Ally</h1>
           <!-- The one below Doesnt look to Good -->
           <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-          <h3 class="ml-24 -mt-2 font-semibold">User Guide</h3>
+
+          <!-- To loop through all the posts on the blog do... -->
+          <div v-for="post in posts" :key="post.id" class="post">
+            <nuxt-link :to="{ name: 'blog-id', params: { id: post.id } }">
+              <h3 class="ml-24 -mt-2 font-semibold">User Guide</h3>
+            </nuxt-link>
+          </div>
+          <!-- Ends Here! -->
+
+          <!-- To use a single post do... -->
+          <nuxt-link
+            :to="{
+              name: 'blog-id',
+              params: { id: posts.id, slug: posts.slug },
+            }"
+          >
+            <p>Yeah</p>
+          </nuxt-link>
+          <!-- Ends Here -->
         </div>
       </nuxt-link>
     </div>
@@ -26,6 +44,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import Banner from '../../components/Banner'
 import UserguideHeader from '../../components/UserguideHeader'
 import Accordion from '../../components/Accordion'
@@ -35,6 +54,18 @@ export default {
     UserguideHeader,
     Banner,
     Accordion,
+  },
+  fetch({ store }) {
+    return axios
+      .get('https://ojreloaded.com.ng/wp-json/wp/v2/posts/700')
+      .then((res) => {
+        store.commit('frontPagePosts', res.data)
+      })
+  },
+  computed: {
+    posts() {
+      return this.$store.state.posts
+    },
   },
 }
 </script>

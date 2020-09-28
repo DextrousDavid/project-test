@@ -44,7 +44,7 @@
             to="/"
             class="block mt-4 lg:inline-block lg:mt-0 px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
-            products
+            Products
           </nuxt-link>
           <nuxt-link
             to="/"

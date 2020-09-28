@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import axios from 'axios';
 export default {
   /*
    ** Nuxt rendering mode
@@ -58,11 +59,28 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/tailwindcss',
   ],
+
+  generate: {
+    routes: () => {
+        return axios.get('http://ojreloaded.com.ng/wp-json/wp/v2/posts').then((res) => {
+            return res.data.map((post) => {
+                return {
+                    route: 'blog/' + post.slug,
+                    payload: post
+                }
+            })
+        })
+    }
+},
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    [
+      '@nuxtjs/axios', {
+      }
+    ],
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content

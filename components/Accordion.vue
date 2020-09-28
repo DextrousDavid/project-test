@@ -219,8 +219,17 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   components: {},
+  fetch({ store }) {
+    return axios
+      .get('https://ojreloaded.com.ng/wp-json/wp/v2/posts')
+      .then((res) => {
+        store.commit('frontPagePosts', res.data)
+      })
+  },
   data() {
     return {
       isOpen: false,
@@ -395,6 +404,11 @@ export default {
       approvalcenters: [],
       settings: [],
     }
+  },
+  computed: {
+    posts() {
+      return this.$store.state.posts
+    },
   },
   head() {
     return {

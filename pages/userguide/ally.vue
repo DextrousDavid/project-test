@@ -15,22 +15,27 @@
           <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
 
           <!-- To loop through all the posts on the blog do... -->
-          <div v-for="post in posts" :key="post.id" class="post">
-            <nuxt-link :to="{ name: 'blog-id', params: { id: post.id } }">
+          <!-- <div v-for="post in posts" :key="post.id" class="post">
+            <nuxt-link
+              :to="{
+                name: 'blog-id',
+                params: { id: post.id, slug: posts.slug },
+              }"
+            >
               <h3 class="ml-24 -mt-2 font-semibold">User Guide</h3>
             </nuxt-link>
-          </div>
+          </div> -->
           <!-- Ends Here! -->
 
           <!-- To use a single post do... -->
-          <nuxt-link
+          <!-- <nuxt-link
             :to="{
               name: 'blog-id',
               params: { id: posts.id, slug: posts.slug },
             }"
           >
             <p>Yeah</p>
-          </nuxt-link>
+          </nuxt-link> -->
           <!-- Ends Here -->
         </div>
       </nuxt-link>
@@ -48,7 +53,6 @@ import axios from 'axios'
 import Banner from '../../components/Banner'
 import UserguideHeader from '../../components/UserguideHeader'
 import Accordion from '../../components/Accordion'
-
 export default {
   components: {
     UserguideHeader,
@@ -57,7 +61,7 @@ export default {
   },
   fetch({ store }) {
     return axios
-      .get('https://ojreloaded.com.ng/wp-json/wp/v2/posts/700')
+      .get('https://resources.cloudenly.com/wp-json/wp/v2/ht_kb/144')
       .then((res) => {
         store.commit('frontPagePosts', res.data)
       })
@@ -76,17 +80,14 @@ export default {
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, sans-serif;
 }
-
 h1 {
   font-size: 40px;
   margin-bottom: -20px;
   margin-left: -8px;
 }
-
 h2 {
   font-size: 20px;
 }
-
 img {
   margin-top: -28px;
   height: 80px;
@@ -97,20 +98,17 @@ img {
   border: 2px solid #f4f4f4;
   margin-bottom: 40px;
 }
-
 h1 {
   line-height: 26px;
   font-size: 22px;
   font-weight: 500;
   margin-top: -50px;
 }
-
 h5 {
   margin-top: 20px;
   font-size: 14px;
   margin-bottom: 20px;
 }
-
 .userguideicons {
   width: 50%;
   margin: auto;

@@ -2,7 +2,7 @@
   <div class="mt-3">
     <v-app>
       <div class="xs:px-16 sm:px-16 md:mx-40 lg:mx-48">
-        <v-expansion-panels tile:true accordion hover>
+        <v-expansion-panels accordion hover>
           <v-expansion-panel>
             <v-expansion-panel-header>
               Get started with Optima
@@ -11,16 +11,25 @@
               </template>
             </v-expansion-panel-header>
 
-            <v-expansion-panel-content
-              v-for="getStartedWithOptima in getStartedWithOptimas"
-              :key="getStartedWithOptima.id"
-              color="blue-grey lighten-5"
-              hover
-            >
-              <nuxt-link to="/">
-                <div style="color: #000">{{ getStartedWithOptima.title }}</div>
-              </nuxt-link>
-            </v-expansion-panel-content>
+            <div class="hover:bg-gray-500">
+              <v-expansion-panel-content
+                v-for="getStartedWithOptima in getStartedWithOptimas"
+                :key="getStartedWithOptima.id"
+                color="blue-grey lighten-5"
+                hover
+              >
+                <nuxt-link
+                  :to="{
+                    name: 'blog-id',
+                    params: { id: posts.id, slug: posts.slug },
+                  }"
+                >
+                  <div style="color: #4242be">
+                    {{ getStartedWithOptima.title }}
+                  </div>
+                </nuxt-link>
+              </v-expansion-panel-content>
+            </div>
           </v-expansion-panel>
 
           <v-expansion-panel>
@@ -36,9 +45,9 @@
               :key="crm.id"
               color="blue-grey lighten-5"
             >
-              <nuxt-link to="/">
-                <div style="color: #000">{{ crm.title }}</div>
-              </nuxt-link>
+              <a :href="crm.url">
+                {{ crm.title }}
+              </a>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
@@ -225,7 +234,7 @@ export default {
   components: {},
   fetch({ store }) {
     return axios
-      .get('https://ojreloaded.com.ng/wp-json/wp/v2/posts')
+      .get('https://resources.cloudenly.com/wp-json/wp/v2/ht_kb/')
       .then((res) => {
         store.commit('frontPagePosts', res.data)
       })
@@ -239,27 +248,30 @@ export default {
         {
           id: 1,
           title: 'Customer Registration',
-          url: 'https://facebook.com',
+          url:
+            'https://resources.cloudenly.com/knowledge-base/customer-registration/',
         },
         {
           id: 2,
           title: 'Customer Engagement',
-          url: 'https://facebook.com',
+          url:
+            'https://resources.cloudenly.com/knowledge-base/customer-engagement/',
         },
         {
           id: 3,
           title: 'Pipeline Management',
-          url: 'https://facebook.com',
+          url:
+            'https://resources.cloudenly.com/knowledge-base/pipeline-management/',
         },
         {
           id: 4,
           title: 'Promotions',
-          url: 'https://facebook.com',
+          url: 'https://resources.cloudenly.com/knowledge-base/promotion/',
         },
         {
           id: 5,
           title: 'Meeting',
-          url: 'https://facebook.com',
+          url: 'https://resources.cloudenly.com/knowledge-base/meeting/',
         },
       ],
 

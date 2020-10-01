@@ -179,7 +179,7 @@ export default {
 
 <style scoped>
 .footer {
-  margin-top: 10em;
+  margin-top: 6em;
 }
 
 * {

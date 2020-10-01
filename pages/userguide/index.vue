@@ -3,9 +3,9 @@
     <!-- Banner goes in here -->
     <UserguideHeader />
     <Banner />
-    <div class="mt-16 mb-16 flex items-center justify-center">
+    <div class="mt-16 mb-10 flex items-center justify-center">
       <nuxt-link to="/">
-        <div class="font-extrabold rounded-lg">
+        <div class="font-extrabold items-center rounded-lg">
           <img
             class="img-logo inline-block fill-current h-20 w-20"
             src="~assets/Cloudenly.svg"
@@ -20,7 +20,7 @@
     <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap">
         <!-- Row One Starts here! -->
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+        <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/optima">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
@@ -38,7 +38,7 @@
           </nuxt-link>
         </div>
         <!-- Row 1 Ends Here -->
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+        <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/humanaR">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
@@ -56,7 +56,7 @@
           </nuxt-link>
         </div>
 
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+        <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/dome">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
@@ -74,7 +74,7 @@
           </nuxt-link>
         </div>
 
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+        <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/ally">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
@@ -92,7 +92,7 @@
           </nuxt-link>
         </div>
 
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+        <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/quantum">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
@@ -110,7 +110,7 @@
           </nuxt-link>
         </div>
 
-        <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+        <div class="px-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
           <nuxt-link to="/userguide/lite">
             <div class="resource-card shadow-md">
               <div class="text-center mr-3 ml-3">
@@ -143,7 +143,21 @@ export default {
   },
   head() {
     return {
-      title: 'User Guide',
+      title: 'User Guides',
+      meta: [
+        {
+          hid: 'UserGuide',
+          name: 'UserGuides',
+          content: 'Our Userguides - All you need to know about our resources',
+        },
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://db.onlinewebfonts.com/c/0007c768c0c6149485a44a0409d9433c?family=GalanoGrotesque-Regular',
+        },
+      ],
     }
   },
 }
@@ -170,9 +184,9 @@ h1 {
 }
 
 .h1-logo {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: -20px;
-  font-weight: 900;
+  font-weight: 800;
   margin-left: 2px;
 }
 

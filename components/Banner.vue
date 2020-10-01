@@ -6,7 +6,7 @@
         <div style="max-width: 550px; margin: auto">
           <p class="font-normal">
             Flexible pricing options, from personal projects to enterprise
-            applications, and everything in between
+            applications, and everything in between.
           </p>
         </div>
 

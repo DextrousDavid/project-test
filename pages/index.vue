@@ -143,6 +143,14 @@ export default {
   head() {
     return {
       title: 'Resources',
+      meta: [
+        {
+          hid: 'Resources',
+          name: 'Cloudenly Resources',
+          content:
+            'Flexible pricing options, from personal projects to enterprise applications, and everything in between.',
+        },
+      ],
       link: [
         {
           rel: 'stylesheet',

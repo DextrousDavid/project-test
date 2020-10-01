@@ -43,34 +43,34 @@
 
     <!-- main content -->
     <main class="sm:container mx-auto">
-      <Accordion />
+      <!-- <Accordion /> -->
     </main>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 import Banner from '../../components/Banner'
 import UserguideHeader from '../../components/UserguideHeader'
-import Accordion from '../../components/Accordion'
+// // import Accordion from '../../components/Accordion'
 export default {
   components: {
     UserguideHeader,
     Banner,
-    Accordion,
+    // Accordion,
   },
-  fetch({ store }) {
-    return axios
-      .get('https://resources.cloudenly.com/wp-json/wp/v2/ht_kb/144')
-      .then((res) => {
-        store.commit('frontPagePosts', res.data)
-      })
-  },
-  computed: {
-    posts() {
-      return this.$store.state.posts
-    },
-  },
+
+  // fetch({ store }) {
+  //   return axios
+  //     .get('https://resources.cloudenly.com/wp-json/wp/v2/ht_kb/144')
+  //     .then((res) => {
+  //       store.commit('frontPagePosts', res.data)
+  //     })
+  // },
+  // computed: {
+  //   posts() {
+  //     return this.$store.state.posts
+  //   },
 }
 </script>
 

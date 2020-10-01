@@ -20,7 +20,7 @@
 
     <!-- main content -->
     <main class="container">
-      <Accordion />
+      <!-- <Accordion /> -->
     </main>
   </div>
 </template>
@@ -28,13 +28,13 @@
 <script>
 import Banner from '../../components/Banner'
 import UserguideHeader from '../../components/UserguideHeader'
-import Accordion from '../../components/Accordion'
+// // import Accordion from '../../components/Accordion'
 
 export default {
   components: {
     UserguideHeader,
     Banner,
-    Accordion,
+    // Accordion,
   },
 }
 </script>

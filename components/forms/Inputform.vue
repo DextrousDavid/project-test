@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 * {
   box-sizing: border-box;
 }
@@ -52,7 +52,7 @@ export default {
 i {
   color: rgb(59, 178, 226);
   padding-left: 10px;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 i.v-icon.v-icon {

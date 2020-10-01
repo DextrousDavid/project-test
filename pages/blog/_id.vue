@@ -13,7 +13,7 @@
       </div>
     </section>
     <section class="container">
-      <h1 class="post-title font-bold mb-1 ml-2">{{ post.title.rendered }}</h1>
+      <!-- <h1 class="post-title font-bold mb-1 ml-2">{{ post.title.rendered }}</h1>
       <div class="flex mb-4 -mx-2">
         <div class="main-content w-3/4 px-4">
           <p class="text-justify">{{ post.content.rendered }}</p>
@@ -27,7 +27,7 @@
             Read More User Guides
           </nuxt-link>
         </div>
-      </div>
+      </div> -->
     </section>
   </div>
 </template>

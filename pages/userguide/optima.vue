@@ -43,7 +43,7 @@ export default {
           id: 1,
           heading: 'Get Started With Optima',
           content1: 'How do i log in on the app?',
-          url1: '',
+          url1: '//facebook.com',
           content2: 'Tips and Tricks of Optima',
           url2: '',
           content3: 'Get started with Optima',

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <v-app>
-      <div class="xs:px-16 sm:px-16 md:mx-40 lg:mx-48">
+      <div class="xs:mx-2 sm:mx-2 md:mx-40 lg:mx-48">
         <v-expansion-panels accordion hover>
           <v-expansion-panel
             v-for="userGuide in userGuides"
@@ -106,7 +106,7 @@ export default {
         {
           rel: 'stylesheet',
           href:
-            'https://db.onlinewebfonts.com/c/0007c768c0c6149485a44a0409d9433c?family=GalanoGrotesque-Regular',
+            '//db.onlinewebfonts.com/c/0007c768c0c6149485a44a0409d9433c?family=GalanoGrotesque-Regular',
         },
       ],
     }

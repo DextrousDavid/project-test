@@ -98,7 +98,7 @@ export default {
         {
           rel: 'stylesheet',
           href:
-            'https://db.onlinewebfonts.com/c/0007c768c0c6149485a44a0409d9433c?family=GalanoGrotesque-Regular',
+            '//db.onlinewebfonts.com/c/0007c768c0c6149485a44a0409d9433c?family=GalanoGrotesque-Regular',
         },
       ],
     }

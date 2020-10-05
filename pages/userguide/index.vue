@@ -17,7 +17,7 @@
       </nuxt-link>
     </div>
 
-    <!-- main content -->
+    <!-- main Content -->
     <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap">
         <!-- Row One Starts here! -->

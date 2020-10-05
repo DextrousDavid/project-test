@@ -7,13 +7,10 @@
       class="flex items-center justify-between flex-wrap bg-white p-4 pt-8 pb-8"
     >
       <div class="flex items-center flex-shrink-0 text-black mr-2 xl:mr-20">
-        <nuxt-link
-          to="/"
-          class="flex items-center md:ml-10 flex-shrink-0 text-black"
-        >
+        <a href="/" class="flex items-center md:ml-10 flex-shrink-0 text-black">
           <img src="~assets/Cloudenly.svg" alt="Cloudenlylogo" />
           <h1 class="ml-1 font-extrabold logo-text">Cloudenly</h1>
-        </nuxt-link>
+        </a>
       </div>
 
       <div class="block lg:hidden">
@@ -41,19 +38,19 @@
         <div class="text-sm lg:flex-grow" @click="isOpen = !isOpen">
           <!-- Product link -->
           <nuxt-link
-            to="/"
+            to="/products"
             class="block mt-4 lg:inline-block lg:mt-0 px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
             Products
           </nuxt-link>
           <nuxt-link
-            to="/"
+            to="/pricing"
             class="block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
             Pricing
           </nuxt-link>
           <nuxt-link
-            to="/"
+            to="/partners"
             class="block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
             Partners
@@ -61,13 +58,13 @@
 
           <nuxt-link
             to="/"
-            class="block mt-2 lg:inline-block lg:mt-0 text-blue-500 px-1 py-1 hover:bg-gray-200 rounded mr-5"
+            class="block mt-2 lg:inline-block lg:mt-0 px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
             Resources
           </nuxt-link>
 
           <nuxt-link
-            to="/"
+            to="/talkToAnExpert"
             class="block mt-2 lg:inline-block lg:mt-0 text-black-200 px-1 py-1 hover:bg-gray-200 rounded mr-5"
           >
             Talk to an Expert
@@ -76,14 +73,14 @@
         <div class="mr-10">
           <!-- Sign in join us Now buttons -->
           <nuxt-link
-            to="/"
+            to="/signin"
             class="inline-block text-sm py-4 leading-none rounded text-black hover:text-blue-500 px-1 mt-4 mr-3 lg:mt-0 undeline"
           >
             Sign In
           </nuxt-link>
 
           <nuxt-link
-            to="/"
+            to="/getStarted"
             class="inline-block text-sm px-4 py-4 leading-none border rounded text-blue-500 hover:bg-blue-500 hover:text-white mt-4 mr-4 lg:mt-0 shadow-md duration-200"
           >
             Get Started
@@ -130,5 +127,9 @@ export default {
 
 .btnscoped {
   outline: none;
+}
+
+.nuxt-link-exact-active {
+  color: rgb(70, 143, 226);
 }
 </style>

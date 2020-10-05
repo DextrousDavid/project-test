@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Banner />
-    <main class="container mx-auto px-10 py-10">
+    <main class="container mx-auto px-10 py-10 mt-8">
       <div class="flex flex-wrap">
         <!-- Row One Starts here! -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
@@ -21,7 +21,7 @@
         </div>
         <!-- Row Two Ends Here -->
         <div class="px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-6">
-          <nuxt-link to="/">
+          <nuxt-link to="/whitepaper">
             <div class="resource-card bg-gray-200">
               <div class="text-center mr-3 ml-3">
                 <h1 class="font-bold">White Paper</h1>

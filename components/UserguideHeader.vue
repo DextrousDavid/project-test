@@ -41,13 +41,13 @@
           <!-- Product link -->
           <nuxt-link
             to="/userguide"
-            class="text-left block mt-4 lg:inline-block lg:mt-0 text-blue-500 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
+            class="text-left block mt-4 lg:inline-block lg:mt-0 px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             User Guide
           </nuxt-link>
           <nuxt-link
-            to="/"
-            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
+            to="/whitepaper"
+            class="text-left block mt-2 lg:inline-block lg:mt-0 text-black px-1 py-1 hover:bg-gray-200 rounded mr-3 lg:mr-5"
           >
             Whitepaper
           </nuxt-link>
@@ -109,11 +109,15 @@ export default {
 <style scoped>
 .logo-text {
   font-size: 20px;
-  margin-bottom: -3px;
+  margin-bottom: -2px;
 }
 * {
   font-family: 'GalanoGrotesque-Regular', 'Quicksand', 'Source Sans Pro',
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, sans-serif;
+}
+
+.nuxt-link-exact-active {
+  color: rgb(49, 132, 228);
 }
 </style>

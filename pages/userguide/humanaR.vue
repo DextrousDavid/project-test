@@ -19,7 +19,7 @@
     </div>
 
     <!-- main content -->
-    <main class="container">
+    <main>
       <Accordion :user-guides="userGuides" />
     </main>
   </div>
@@ -164,11 +164,11 @@ export default {
   },
   head() {
     return {
-      title: 'HumanaR',
+      title: 'HumanaR - User Guide',
       meta: [
         {
-          hid: 'HumanaR',
-          name: 'HumanaR',
+          hid: 'HumanaR - User Guide',
+          name: 'HumanaR - User Guide',
           content: 'Tips and Tricks of HumanaR, Get started with HumanaR ',
         },
       ],

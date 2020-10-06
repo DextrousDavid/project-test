@@ -59,6 +59,18 @@ export default {
     Banner,
     // Accordion,
   },
+  head() {
+    return {
+      title: 'Ally - User Guide',
+      meta: [
+        {
+          hid: 'Ally - User Guide',
+          name: 'Ally - User Guide',
+          content: 'Tips and Tricks of Ally, Get started with Ally',
+        },
+      ],
+    }
+  },
 
   // fetch({ store }) {
   //   return axios

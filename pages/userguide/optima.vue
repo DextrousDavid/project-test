@@ -19,7 +19,7 @@
     </div>
 
     <!-- main content -->
-    <main class="container">
+    <main>
       <Accordion :user-guides="userGuides" />
     </main>
   </div>
@@ -186,11 +186,11 @@ export default {
   },
   head() {
     return {
-      title: 'Optima',
+      title: 'Optima - User Guide',
       meta: [
         {
-          hid: 'Optima',
-          name: 'Optima',
+          hid: 'Optima - User Guide',
+          name: 'Optima - User Guide',
           content: 'Tips and Tricks of Optima, Get started with Optima',
         },
       ],

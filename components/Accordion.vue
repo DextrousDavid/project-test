@@ -129,6 +129,10 @@ export default {
   font-weight: 550;
 }
 
+.v-application--wrap {
+  min-height: 0;
+}
+
 a {
   font-size: 15px;
 }

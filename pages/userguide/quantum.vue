@@ -36,6 +36,18 @@ export default {
     Banner,
     // Accordion,
   },
+  head() {
+    return {
+      title: 'Quantum - User Guide',
+      meta: [
+        {
+          hid: 'Quantum - User Guide',
+          name: 'Quantum - User Guide',
+          content: 'Tips and Tricks of Quantum, Get started with Quantum',
+        },
+      ],
+    }
+  },
 }
 </script>
 

@@ -36,6 +36,18 @@ export default {
     Banner,
     // Accordion,
   },
+  head() {
+    return {
+      title: 'Lite - User Guide',
+      meta: [
+        {
+          hid: 'Lite - User Guide',
+          name: 'Lite - User Guide',
+          content: 'Tips and Tricks of Lite, Get started with Lite',
+        },
+      ],
+    }
+  },
 }
 </script>
 

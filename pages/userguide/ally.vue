@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-  margin-left: 6.7rem;
+  margin-left: 6rem;
 }
 img {
   margin-top: -28px;

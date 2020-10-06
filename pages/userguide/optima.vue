@@ -43,7 +43,7 @@ export default {
           id: 1,
           heading: 'Get Started With Optima',
           content1: 'How do i log in on the app?',
-          url1: '//facebook.com',
+          url1: '',
           content2: 'Tips and Tricks of Optima',
           url2: '',
           content3: 'Get started with Optima',
@@ -214,10 +214,6 @@ h1 {
 
 h2 {
   font-size: 20px;
-}
-
-.v-application--wrap {
-  min-height: 0vh;
 }
 
 img {

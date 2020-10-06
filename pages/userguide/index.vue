@@ -12,7 +12,7 @@
             alt="cloudenlyLogo"
           />
           <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
-          <h3 class="-mt-2 text-center font-semibold">User Guide</h3>
+          <h3 class="h3-logo -mt-2 text-center font-semibold">User Guide</h3>
         </div>
       </nuxt-link>
     </div>
@@ -178,7 +178,7 @@ export default {
 }
 
 h3 {
-  margin-left: 2.5rem;
+  margin-left: 2rem;
 }
 
 h1 {

@@ -13,7 +13,7 @@
           <h1 class="font-bold inline-block">Lite</h1>
           <!-- The one below Doesnt look to Good -->
           <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-          <h3 class="ml-24 -mt-2 font-semibold">User Guide</h3>
+          <h3 class="-mt-2 font-semibold">User Guide</h3>
         </div>
       </nuxt-link>
     </div>
@@ -62,6 +62,10 @@ h1 {
   font-size: 40px;
   margin-bottom: -20px;
   margin-left: -8px;
+}
+
+h3 {
+  margin-left: 108px;
 }
 
 h2 {

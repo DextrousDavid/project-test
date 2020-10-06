@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <v-app>
-      <div class="xs:mx-2 sm:mx-2 md:mx-40 lg:mx-48">
+      <div class="xs:mx-2 sm:mx-2 md:mx-48 lg:mx-56">
         <v-expansion-panels accordion hover>
           <v-expansion-panel
             v-for="userGuide in userGuides"
@@ -130,7 +130,7 @@ export default {
 }
 
 .v-application--wrap {
-  min-height: 0;
+  min-height: 0vh;
 }
 
 a {

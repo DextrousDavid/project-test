@@ -216,6 +216,10 @@ h2 {
   font-size: 20px;
 }
 
+.v-application--wrap {
+  min-height: 0vh;
+}
+
 img {
   margin-top: -28px;
   height: 80px;

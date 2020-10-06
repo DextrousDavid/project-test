@@ -198,6 +198,10 @@ img {
   margin-top: -28px;
   height: 80px;
 }
+
+.v-application--wrap {
+  min-height: 0vh;
+}
 /* .resource-card {
   padding: 40px 6px 15px 6px;
   border-radius: 6px;

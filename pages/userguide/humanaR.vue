@@ -12,7 +12,7 @@
           />
           <h1 class="font-bold inline-block">HumanaR</h1>
           <!-- The one belser Guide</h2> -->
-          <h3 class="-ml-3 -mt-2 font-semibold">User Guide</h3>
+          <h3 class="-mt-2 font-semibold">User Guide</h3>
         </div>
       </nuxt-link>
     </div>
@@ -53,7 +53,7 @@ export default {
           id: 2,
           heading: 'Organization',
           content1: 'Organization',
-          url1: '',
+          url1: 'https://resources.cloudenly.com/knowledge-base/organisation/',
           content2: 'Functional Hierarchy',
           url2:
             'https://resources.cloudenly.com/knowledge-base/functional-hierarchy/',
@@ -215,6 +215,10 @@ h1 {
 
 h2 {
   font-size: 20px;
+}
+
+h3 {
+  margin-left: -18px;
 }
 
 img {

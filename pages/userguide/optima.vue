@@ -19,7 +19,7 @@
     </div>
 
     <!-- main content -->
-    <main class="container">
+    <main>
       <Accordion :user-guides="userGuides" />
     </main>
   </div>
@@ -43,7 +43,7 @@ export default {
           id: 1,
           heading: 'Get Started With Optima',
           content1: 'How do i log in on the app?',
-          url1: '//facebook.com',
+          url1: '',
           content2: 'Tips and Tricks of Optima',
           url2: '',
           content3: 'Get started with Optima',
@@ -186,11 +186,11 @@ export default {
   },
   head() {
     return {
-      title: 'Optima',
+      title: 'Optima - User Guide',
       meta: [
         {
-          hid: 'Optima',
-          name: 'Optima',
+          hid: 'Optima - User Guide',
+          name: 'Optima - User Guide',
           content: 'Tips and Tricks of Optima, Get started with Optima',
         },
       ],

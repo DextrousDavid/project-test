@@ -11,32 +11,7 @@
             alt="AllyLogo"
           />
           <h1 class="font-bold inline-block">Ally</h1>
-          <!-- The one below Doesnt look to Good -->
-          <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-
-          <!-- To loop through all the posts on the blog do... -->
-          <!-- <div v-for="post in posts" :key="post.id" class="post">
-            <nuxt-link
-              :to="{
-                name: 'blog-id',
-                params: { id: post.id, slug: posts.slug },
-              }"
-            >
-              <h3 class="ml-24 -mt-2 font-semibold">User Guide</h3>
-            </nuxt-link>
-          </div> -->
-          <!-- Ends Here! -->
-
-          <!-- To use a single post do... -->
-          <!-- <nuxt-link
-            :to="{
-              name: 'blog-id',
-              params: { id: posts.id, slug: posts.slug },
-            }"
-          >
-            <p>Yeah</p>
-          </nuxt-link> -->
-          <!-- Ends Here -->
+          <h3 class="-mt-2 font-semibold">User Guide</h3>
         </div>
       </nuxt-link>
     </div>
@@ -58,6 +33,18 @@ export default {
     UserguideHeader,
     Banner,
     // Accordion,
+  },
+  head() {
+    return {
+      title: 'Ally - User Guide',
+      meta: [
+        {
+          hid: 'Ally - User Guide',
+          name: 'Ally - User Guide',
+          content: 'Tips and Tricks of Ally, Get started with Ally',
+        },
+      ],
+    }
   },
 
   // fetch({ store }) {
@@ -83,14 +70,23 @@ export default {
 h1 {
   font-size: 40px;
   margin-bottom: -20px;
-  margin-left: -8px;
+  margin-left: -6px;
 }
+
 h2 {
   font-size: 20px;
+}
+
+h3 {
+  margin-left: 105px;
 }
 img {
   margin-top: -28px;
   height: 80px;
+}
+
+.v-application--wrap {
+  min-height: 1vh;
 }
 /* .resource-card {
   padding: 40px 6px 15px 6px;

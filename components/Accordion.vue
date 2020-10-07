@@ -1,7 +1,7 @@
 <template>
-  <div class="mt-3">
+  <div style="position: relative" class="mt-3">
     <v-app>
-      <div class="xs:mx-2 sm:mx-2 md:mx-40 lg:mx-48">
+      <div class="xs:mx-2 sm:mx-2 md:mx-48 lg:mx-56">
         <v-expansion-panels accordion hover>
           <v-expansion-panel
             v-for="userGuide in userGuides"
@@ -132,7 +132,9 @@ export default {
 a {
   font-size: 15px;
 }
-
+.v-application--wrap {
+  min-height: 1px !important;
+}
 .divtextColor {
   color: #000;
 }

@@ -12,12 +12,12 @@
             alt="cloudenlyLogo"
           />
           <h1 class="font-extrabold h1-logo inline-block">Cloudenly</h1>
-          <h3 class="-mt-2 text-center font-semibold">User Guide</h3>
+          <h3 class="h3-logo -mt-2 text-center font-semibold">User Guide</h3>
         </div>
       </nuxt-link>
     </div>
 
-    <!-- main content -->
+    <!-- main Content -->
     <main class="container mx-auto px-10 py-10">
       <div class="flex flex-wrap">
         <!-- Row One Starts here! -->
@@ -178,7 +178,7 @@ export default {
 }
 
 h3 {
-  margin-left: 2.5rem;
+  margin-left: 2rem;
 }
 
 h1 {

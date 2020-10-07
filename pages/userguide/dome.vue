@@ -36,6 +36,18 @@ export default {
     Banner,
     // Accordion,
   },
+  head() {
+    return {
+      title: 'Dome - User Guide',
+      meta: [
+        {
+          hid: 'Dome - User Guide',
+          name: 'Dome - User Guide',
+          content: 'Tips and Tricks of Dome, Get started with Dome',
+        },
+      ],
+    }
+  },
 }
 </script>
 

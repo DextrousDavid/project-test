@@ -13,7 +13,7 @@
           <h1 class="font-bold inline-block">Quantum</h1>
           <!-- The one below Doesnt look to Good -->
           <!-- <h2 class="-ml-24 my-3">User Guide</h2> -->
-          <h3 class="-ml-6 -mt-2 font-semibold">User Guide</h3>
+          <h3 class="-mt-2 font-semibold">User Guide</h3>
         </div>
       </nuxt-link>
     </div>
@@ -35,6 +35,18 @@ export default {
     UserguideHeader,
     Banner,
     // Accordion,
+  },
+  head() {
+    return {
+      title: 'Quantum - User Guide',
+      meta: [
+        {
+          hid: 'Quantum - User Guide',
+          name: 'Quantum - User Guide',
+          content: 'Tips and Tricks of Quantum, Get started with Quantum',
+        },
+      ],
+    }
   },
 }
 </script>

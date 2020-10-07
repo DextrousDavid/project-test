@@ -218,7 +218,7 @@ h2 {
 }
 
 h3 {
-  margin-left: -10px;
+  margin-left: -11px;
 }
 
 img {
